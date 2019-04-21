@@ -4,7 +4,10 @@ import sys
 # Hi Yangzi!
 class sokoBoard:
 
-    def __init__(self):
+
+    # Given no input generate most basic board
+    # Otherwise, 
+    def __init__(self, filename = None):
         self.board = []
         self.heuristicCost = 0
         self.functionCost = 0
@@ -12,11 +15,11 @@ class sokoBoard:
 
         self.moves = []
 
-    def initPuzzle(board, player):
-        self.board = board
-        self.player = player
+    # def initPuzzle(board, player):
+    #     self.board = board
+    #     self.player = player
 
-    def readFile(filename):
+    def readFile(self, filename):
         sokomap = open(filename, "r")
             
 
