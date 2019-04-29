@@ -1,3 +1,4 @@
 .vscode/*
 sample-posters/*
 starPlayer.py
+__pycache__/*
