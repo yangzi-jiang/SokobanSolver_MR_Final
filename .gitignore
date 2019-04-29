@@ -1,1 +1,3 @@
-.vscode/
+.vscode/*
+sample-posters/*
+starPlayer.py
