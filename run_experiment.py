@@ -8,7 +8,7 @@ Runs experiment
 def run_search(s, filename, search_selection):
     board = s.new_game(filename)
     print('\nSolving ' + filename + '...')
-    s.doSearches(board, search_selection)
+    s.search(board, search_selection)
 
 def main():
     soko_game = Sokoban()
@@ -27,8 +27,7 @@ def main():
         run_search(soko_game, sys.argv[1], search_selection)
     # Need to specify puzzleboards files
     else:
-        run_search(soko_game, 'puzzles/easy1.txt', search_selection)
-        run_search(soko_game, 'puzzles/easy3.txt', search_selection)
-        run_search(soko_game, 'puzzles/mod1.txt', search_selection)
+        run_search(soko_game, 'levels/misc/easy4.txt', search_selection)
+
 if __name__ == "__main__":
     main()

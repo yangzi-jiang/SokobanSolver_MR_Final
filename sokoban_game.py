@@ -1,4 +1,6 @@
+import bfs
 from sokoban_state import State
+
 
 class Sokoban:
 
@@ -32,7 +34,7 @@ class Sokoban:
                     x += 1
                 y += 1
                 x = 0
-
+            return new_board
             # if hasattr(b, 'player'):
             #     return b
             # else:
@@ -40,8 +42,8 @@ class Sokoban:
             #     return None    
     def search(self, board, mode):
         if mode == 1:
-            # bfs.search(board)
-            pass
+            bfs.search(board)
+            # pass
         if mode == 2:
             # dfs.search(board)
             pass

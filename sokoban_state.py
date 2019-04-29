@@ -25,6 +25,7 @@ class State:
         self.walls = []
         self.boxes = []
         self.goals = []
+        self.fboxes = frozenset()  # since list is not hashable
         self.player = None
         self.cost = 1
 
@@ -37,7 +38,7 @@ class State:
     
     def __hash__(self):
         ''' hashes by frozenset of box positions '''
-        return hash(self.boxes, self.player)
+        return hash((self.fboxes, self.player))
 
     def __gt__(self, other):
         ''' Greater than, comparison by cost '''
@@ -82,7 +83,7 @@ class State:
         p = self.player + direction.location
         if p in self.boxes:
             self.boxes.remove(p)
-            self.boxes.append(p + direction.sp)
+            self.boxes.append(p + direction.location)
             # self.ucsCost = 2
         self.player = p
         self.move_list.append(direction)
