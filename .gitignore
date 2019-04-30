@@ -2,3 +2,5 @@
 sample-posters/*
 starPlayer.py
 __pycache__/*
+*.pyc
+*.json

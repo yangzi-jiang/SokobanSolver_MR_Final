@@ -31,15 +31,22 @@ class Sokoban:
                     elif char == '*':
                         new_board.add_box(x, y)
                         new_board.add_goal(x, y)
+                    elif char == ' ':
+                        new_board.add_space(x, y)
+                        # Add deadlocks here
+                        new_board.static_deadlock(x, y)
+
                     x += 1
                 y += 1
                 x = 0
-            return new_board
+
+        return new_board
             # if hasattr(b, 'player'):
             #     return b
             # else:
             #     print "No player on board"
             #     return None    
+
     def search(self, board, mode):
         if mode == 1:
             bfs.search(board)

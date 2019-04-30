@@ -27,6 +27,8 @@ class State:
         self.goals = []
         self.fboxes = frozenset()  # since list is not hashable
         self.player = None
+        self.spaces = []
+        self.deadlocks = []
         self.cost = 1
 
     def __eq__(self, other):
@@ -63,9 +65,29 @@ class State:
     def add_box(self, x, y):
         self.boxes.append(Location(x, y))
 
+    def add_space(self, x, y):
+        self.spaces.append(Location(x, y))
+
     def set_player(self, x, y):
         self.player = Location(x, y)
 
+    def static_deadlock(self, x, y):
+        ''' Add deadlock based on the board alone, not including the dynamic deadlocks among boxes'''
+
+        def _place_deadlock(x, delta_x, y, delta_y):
+            # check whether a spot is in the wall corner
+            try:
+                if Location((x + delta_x), y) in self.walls and Location(x, (y + delta_y)) in self.walls:
+                    self.deadlocks.append(Location(x, y))
+                    return True
+            except IndexError:
+                pass
+            return False
+        
+        _place_deadlock(y,x,-1,-1) or _place_deadlock(y,x,-1,1) or \
+        _place_deadlock(y,x,1,-1) or _place_deadlock(y,x,1,1)
+        
+        
     def moves_available(self):
         moves = []
         for d in DIRECTIONS:
@@ -102,6 +124,18 @@ class State:
             chars += m.character
             chars += ', '
         return chars
+
+    '''
+    def printBoard(self):
+        board = []
+        
+        for i in range(len(self.walls)):
+            board.append
+            for j in range(len(self.board[i])):
+                # temp = temp + 
+                print(self.board[i][j], end = "")
+            print()
+    '''
     '''
     # Heuristics 1 uses manhattan distance
     def calculateH1(self):
@@ -123,14 +157,8 @@ class State:
         manhattanD = math.fabs(boxLocations[0][0] - goalLocations[0][0]) + math.fabs(boxLocations[0][1] - goalLocations[0][1]) 
 
         return manhattanD
-    
-    def printBoard(self):
-        for i in range(len(self.board)):
-            for j in range(len(self.board[i])):
-                # temp = temp + 
-                print(self.board[i][j], end = "")
-            print()
     '''
+    
 
 # def main():
 #    test = sokoBoard()
