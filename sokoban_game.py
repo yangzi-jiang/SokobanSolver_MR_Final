@@ -45,7 +45,7 @@ class Sokoban:
                 for char in line:
                     if char == '@' or char == ' ':
                         # Check deadlocks here
-                        new_board.static_deadlock(x, y)
+                        new_board.add_static_deadlock(x, y)
                     x += 1
                 y += 1
                 x = 0

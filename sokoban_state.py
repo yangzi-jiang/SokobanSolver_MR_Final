@@ -71,7 +71,7 @@ class State:
     def set_player(self, x, y):
         self.player = Location(x, y)
 
-    def static_deadlock(self, x, y):
+    def add_static_deadlock(self, x, y):
         ''' Add deadlock based on the board alone, not including the dynamic deadlocks among boxes'''
 
         def _place_deadlock(x, delta_x, y, delta_y):
@@ -98,9 +98,8 @@ class State:
             if self.player + d.location not in self.walls:
                 if self.player + d.location in self.boxes:
                 # Check if box can be pushed to next space
-                    if self.player + d.location.space_past_box() not in ((self.boxes + self.walls) \
-                        and self.deadlocks):
-                            moves_available.append(d)
+                    if self.player + d.location.space_past_box() not in self.boxes + self.walls + self.deadlocks:
+                        moves_available.append(d)
                 else:
                     moves_available.append(d)
         return moves_available
