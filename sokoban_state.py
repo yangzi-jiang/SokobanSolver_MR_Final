@@ -19,8 +19,8 @@ class State:
     # TILE_DEADLOCK = 'x'
     # TILE_PLAYER_ON_DEADLOCK = '+'
 
-    def __init__(self, move_list):
-        self.move_list = move_list
+    def __init__(self, move_history):
+        self.move_history = move_history
 
         self.walls = []
         self.boxes = []
@@ -78,27 +78,32 @@ class State:
             # check whether a spot is in the wall corner
             try:
                 if Location((x + delta_x), y) in self.walls and Location(x, (y + delta_y)) in self.walls:
+                    print('Deadlock exists at %d %d', x, y)
+                    print('Wall exists at %d %d', (x + delta_x), y)
+                    print('Wall exists at %d %d', (x), y + delta_y)
                     self.deadlocks.append(Location(x, y))
                     return True
             except IndexError:
                 pass
             return False
         
-        _place_deadlock(y,x,-1,-1) or _place_deadlock(y,x,-1,1) or \
-        _place_deadlock(y,x,1,-1) or _place_deadlock(y,x,1,1)
+        _place_deadlock(x, -1, y, -1) or _place_deadlock(x,-1, y, 1) or \
+        _place_deadlock(x, 1, y, -1) or _place_deadlock(x, 1, y, 1)
         
-        
+
+
     def moves_available(self):
-        moves = []
+        moves_available= []
         for d in DIRECTIONS:
             if self.player + d.location not in self.walls:
                 if self.player + d.location in self.boxes:
                 # Check if box can be pushed to next space
-                    if self.player + d.location.space_past_box() not in (self.boxes + self.walls):
-                        moves.append(d)
+                    if self.player + d.location.space_past_box() not in ((self.boxes + self.walls) \
+                        and self.deadlocks):
+                            moves_available.append(d)
                 else:
-                    moves.append(d)
-        return moves
+                    moves_available.append(d)
+        return moves_available
 
     def move(self, direction):
         ''' moves player and box '''
@@ -108,7 +113,7 @@ class State:
             self.boxes.append(p + direction.location)
             # self.ucsCost = 2
         self.player = p
-        self.move_list.append(direction)
+        self.move_history.append(direction)
 
     def is_win(self):
         ''' Checks for winning/final state '''
@@ -120,7 +125,7 @@ class State:
     def getDirections(self):
         ''' Outputs the list of directions taken for the solution '''
         chars = ''
-        for m in self.move_list:
+        for m in self.move_history:
             chars += m.character
             chars += ', '
         return chars

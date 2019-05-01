@@ -8,11 +8,11 @@ Runs experiment
 def run_search(s, filename, search_selection):
     board = s.new_game(filename)
     print('Intializing Board:')
-    print_board(board)
+    print_board_lists(board)
     print('\nSolving ' + filename + '...')
     s.search(board, search_selection)
 
-def print_board(board):
+def print_board_lists(board):
     print('Walls Locations:')
     print(*board.walls)
     print('Boxes Locations:')
@@ -25,6 +25,11 @@ def print_board(board):
     print(*board.spaces)
     print('Deadlocks Locations:')
     print(*board.deadlocks)
+
+# def print_board(s, filename):
+#     board=[]
+#     board_array = s.new_game(filename)
+#     for element in *board_array.walls
 
 def main():
     soko_game = Sokoban()

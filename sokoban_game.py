@@ -15,6 +15,7 @@ class Sokoban:
             x = 0
             y = 0
 
+            # x is column, and y is row
             for line in lines:
                 for char in line:
                     if char == '#':
@@ -33,9 +34,18 @@ class Sokoban:
                         new_board.add_goal(x, y)
                     elif char == ' ':
                         new_board.add_space(x, y)
-                        # Add deadlocks here
+                    x += 1
+                y += 1
+                x = 0
+            
+            # Adding static deadlocks after building the walls
+            x = 0
+            y = 0
+            for line in lines:
+                for char in line:
+                    if char == '@' or char == ' ':
+                        # Check deadlocks here
                         new_board.static_deadlock(x, y)
-
                     x += 1
                 y += 1
                 x = 0

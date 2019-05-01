@@ -26,5 +26,5 @@ class Location:
 
     def space_past_box(self):
         ''' Checks one space pass the box '''
-        # Why is this * 2 ?
+        # eg. left-move = (-1,0), so left_move * 2 = (-1, 0)
         return Location(self.x * 2, self.y * 2)
