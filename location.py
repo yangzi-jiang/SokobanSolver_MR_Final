@@ -24,6 +24,15 @@ class Location:
     def __str__(self):
         return str(self.x) + ', ' + str(self.y)
 
+    def __cordinates__(self):
+        return self.x, self.y
+    
+    def __x_cord__(self):
+        return self.x
+
+    def __y_cord__(self):
+        return self.y
+
     def space_past_box(self):
         ''' Checks one space pass the box '''
         # eg. left-move = (-1,0), so left_move * 2 = (-1, 0)

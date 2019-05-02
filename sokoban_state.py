@@ -90,7 +90,11 @@ class State:
         _place_deadlock(x, -1, y, -1) or _place_deadlock(x,-1, y, 1) or \
         _place_deadlock(x, 1, y, -1) or _place_deadlock(x, 1, y, 1)
         
+        def _dead_row():
+            pass
 
+        def _dead_col():
+            pass
 
     def moves_available(self):
         moves_available= []
