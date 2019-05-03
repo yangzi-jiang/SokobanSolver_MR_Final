@@ -1,0 +1,34 @@
+Intializing Board...
+8 8
+########
+#X . .X#
+#X   # #
+## # # #
+X#  $  #
+ #  $@ #
+ #X   X#
+ #######
+
+Solving levels/misc/easy4.txt...
+
+1. Breadth-first search
+Solution: r, d, l, l, l, l, u, r, r, l, l, d, r, r, r, r, u, l, l, r, r, d, l, l, l, l, u, r, r, u, r, r, d, l, r, d, l, l, l, l, u, r, r, l, l, d, r, r, r, u, r, d, l, l, l, l, u, r, r, u, l, l, u, u, r, r, d, d, l, l, d, r, r, l, l, d, r, r, r, r, u, l, r, d, l, l, u, u, u, d, l, l, d, r, r, r, r, u, l, r, d, l, l, l, l, u, u, u, r, u, r, d, l, l, l, u, r, r, r, r, r, d, d, d, l, l, r, r, d, l, l, l, l, u, r, r, u, u, l, l, l, u, r, r, r, l, l, l, d, r, r, r, d, d, l, l, d, r, r, r, r, u, l, r, d, l, l, l, l, u, u, u, r, r, d, d, r, r, d, l, l, r, r, d, l, l, l, l, u, r, r, l, l, d, r, r, r, r, u, l, l, l, r, r, r, d, l, l, l, l, u, r, r, r, r, u, l, l, u, u, l, l, d, d, r, r, r, r, u, u, u, l, r, d, d, d, l, l, l, d, r, r, r, d, l, l, l, l, u, r, r, r, r, u, u, u, u, l, l, r, r, d, d, d, l, l, l, d, r, r, r, d, l, l, l, l, u, u, r, r, r, r, u, u, u, l, l, l, r, r, r, d, d, d, l, l, u, u, l, l, l, u, r, r, r, l, l, l, d, r, r, r, d, d, r, r, d, l, l, l, l, u, u, d, r, r, r, r, u, u, u, l, r, d, d, d, l, l, l, l, u, u, r, u, r, l, d, r, d, d, r, r, d, l, l, l, l, u, u, u, l, u, r, 
+Nodes generated: 11787
+Nodes repeated: 7306
+Fringe nodes: 266
+Explored nodes: 2895
+Duration: 151.03126502037048 secs
+
+Would be 90 secs ish if we don't update cell type
+
+8 8
+########
+#X@   X#
+#X   # #
+## # # #
+X#     #
+ #     #
+ #X   X#
+ #######
+Puzzle Solved...
+(base) yangzis-mbp:SokobanSolver_MR_Final yangzijiang$ 

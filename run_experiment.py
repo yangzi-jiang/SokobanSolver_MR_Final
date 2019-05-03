@@ -7,12 +7,13 @@ Runs experiment
 
 def run_search(s, filename, search_selection):
     board = s.new_game(filename)
-    print('Intializing Board:')
-    s.print_board_lists(board)
+    print('Intializing Board...')
+    # s.print_board_lists(board)
     s.print_board(board)
     print('\nSolving ' + filename + '...')
     solved_board = s.search(board, search_selection)
     s.print_board(solved_board)
+    print('Puzzle Solved...')
 
 def main():
     soko_game = Sokoban()

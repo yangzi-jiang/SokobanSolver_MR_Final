@@ -25,11 +25,13 @@ class State:
         self.walls = []
         self.boxes = []
         self.goals = []
+        self.fgoals = frozenset()
         self.fboxes = frozenset()  # since list is not hashable
         self.player = None
         self.spaces = []
         self.deadlocks = []
         self.cost = 1
+        self.boxes_on_goal = []
 
     def __eq__(self, other):
         ''' Equality check by box positions and player positions '''
@@ -71,16 +73,13 @@ class State:
     def set_player(self, x, y):
         self.player = Location(x, y)
 
-    def add_static_deadlock(self, x, y):
+    def add_static_deadlock(self, x, y, row_size, col_size):
         ''' Add deadlock based on the board alone, not including the dynamic deadlocks among boxes'''
 
         def _place_deadlock(x, delta_x, y, delta_y):
             # check whether a spot is in the wall corner
             try:
                 if Location((x + delta_x), y) in self.walls and Location(x, (y + delta_y)) in self.walls:
-                    print('Deadlock exists at %d %d', x, y)
-                    print('Wall exists at %d %d', (x + delta_x), y)
-                    print('Wall exists at %d %d', (x), y + delta_y)
                     self.deadlocks.append(Location(x, y))
                     return True
             except IndexError:
@@ -90,14 +89,31 @@ class State:
         _place_deadlock(x, -1, y, -1) or _place_deadlock(x,-1, y, 1) or \
         _place_deadlock(x, 1, y, -1) or _place_deadlock(x, 1, y, 1)
         
-        def _dead_row():
-            pass
+        # def _dead_row(row_size, x, y, goal):
+        #     if (y == 1) or (y == row_size - 2):
+        #         # need to check no goals are in the columnn. this 
+        #         if Location.__y_cord__(goal) != 
+        #             if Location(x, y) in self.spaces:
+        #                 self.deadlocks.append(Location(x, y))
+        #                 return True
+        #         return False
+        #     return False
 
-        def _dead_col():
-            pass
+        # def _dead_col(col_size, x, y):
+        #     if (x == 1) or (x == col_size - 2):
+        #         if Location(x, y) in self.spaces:
+        #             self.deadlocks.append(Location(x, y))
+        #             return True
+        #         return False
+        #     return False
+        
+        # _dead_row(row_size, x, y)
+        # _dead_col(row_size, x, y)
 
     def moves_available(self):
         moves_available= []
+
+        # This thing is slow, should be reverse back to a 2-d array representation?
         for d in DIRECTIONS:
             if self.player + d.location not in self.walls:
                 if self.player + d.location in self.boxes:
@@ -110,12 +126,25 @@ class State:
 
     def move(self, direction):
         ''' moves player and box '''
-        p = self.player + direction.location
-        if p in self.boxes:
-            self.boxes.remove(p)
-            self.boxes.append(p + direction.location)
-            # self.ucsCost = 2
-        self.player = p
+        player_new = self.player + direction.location
+        box_new = self.player + direction.location.space_past_box()
+
+        # This thing is slow, should be reverse back to a 2-d array representation?
+        if player_new in self.boxes:
+            self.boxes.remove(player_new)
+            self.boxes.append(box_new)
+
+        # if player_new in self.boxes:
+        #     self.boxes.remove(player_new)
+        #     if box_new in self.spaces:
+        #         self.boxes.append(box_new)
+        #     elif box_new in self.goals:
+        #         self.boxes_on_goal.append(box_new)
+        #     else:
+        #         print("WTF at ", player_new)
+        #     # self.ucsCost = 2
+        self.spaces.append(self.player)
+        self.player = player_new
         self.move_history.append(direction)
 
     def is_win(self):
@@ -133,17 +162,6 @@ class State:
             chars += ', '
         return chars
 
-    '''
-    def printBoard(self):
-        board = []
-        
-        for i in range(len(self.walls)):
-            board.append
-            for j in range(len(self.board[i])):
-                # temp = temp + 
-                print(self.board[i][j], end = "")
-            print()
-    '''
     '''
     # Heuristics 1 uses manhattan distance
     def calculateH1(self):
@@ -166,13 +184,3 @@ class State:
 
         return manhattanD
     '''
-    
-
-# def main():
-#    test = sokoBoard()
-#    print(test.calculateH1())
-#    test.printBoard()
-        
-
-# if __name__ == "__main__":
-#     main()

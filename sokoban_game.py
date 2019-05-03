@@ -42,7 +42,7 @@ class Sokoban:
                     self.col_size = x
                 y+= 1
                 x = 0
-                self.row_size = y            
+                self.row_size = y
             # Adding static deadlocks after building the walls
             x = 0
             y= 0
@@ -50,7 +50,7 @@ class Sokoban:
                 for char in line:
                     if char == '@' or char == ' ':
                         # Check deadlocks here
-                        new_board.add_static_deadlock(x, y)
+                        new_board.add_static_deadlock(x, y, self.row_size, self.col_size)
                     x += 1
                 y+= 1
                 x = 0
@@ -104,7 +104,7 @@ class Sokoban:
 
     def print_board(self, board):
         b = [None] * (self.col_size * self.row_size)
-
+        # The order matters
         for element in board.walls:
             x = Location.__x_cord__(element)
             y = Location.__y_cord__(element)
@@ -133,6 +133,11 @@ class Sokoban:
         x = Location.__x_cord__(board.player)
         y = Location.__y_cord__(board.player)
         b[x*self.col_size + y]= '@'
+
+        for element in board.boxes_on_goal:
+            x = Location.__x_cord__(element)
+            y = Location.__y_cord__(element)
+            b[x*self.col_size + y]= '*'
 
         print(self.row_size, self.col_size)
 
