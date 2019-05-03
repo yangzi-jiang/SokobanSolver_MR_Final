@@ -21,6 +21,7 @@ class Sokoban:
 
             # x is column, and yis row
             for line in lines:
+                row = []
                 for char in line:
                     if char == '#':
                         new_board.add_wall(x, y)
@@ -28,11 +29,13 @@ class Sokoban:
                         new_board.add_goal(x, y)
                     elif char == '@':
                         new_board.set_player(x, y)
+                        new_board.add_space(x, y) # A Player
                     elif char == '+':
                         new_board.set_player(x, y)
                         new_board.add_goal(x, y)
                     elif char == '$':
                         new_board.add_box(x, y)
+                        new_board.add_space(x, y)
                     elif char == '*':
                         new_board.add_box(x, y)
                         new_board.add_goal(x, y)
@@ -40,9 +43,12 @@ class Sokoban:
                         new_board.add_space(x, y)
                     x += 1
                     self.col_size = x
+                    row.append(char)
                 y+= 1
                 x = 0
                 self.row_size = y
+                new_board.add_full_board(row)
+
             # Adding static deadlocks after building the walls
             x = 0
             y= 0
@@ -85,6 +91,13 @@ class Sokoban:
             # gbfs.search(board)
             # ass.search(board)
             pass
+
+    def print_full_board(self, board):
+        for i in range(len(board.full_board)):
+            for j in range(len(board.full_board[i])):
+                # temp = temp + 
+                print(board.full_board[i][j], end = "")
+            print()
 
     def print_board_lists(self, board):
         print('Walls Locations:')

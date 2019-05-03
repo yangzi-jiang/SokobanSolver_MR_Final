@@ -21,7 +21,7 @@ class State:
 
     def __init__(self, move_history):
         self.move_history = move_history
-
+        self.full_board = []
         self.walls = []
         self.boxes = []
         self.goals = []
@@ -57,6 +57,9 @@ class State:
             return True
         else:
             return False
+
+    def add_full_board(self, row):
+        self.full_board.append(row)
 
     def add_wall(self, x, y):
         self.walls.append(Location(x, y))
@@ -143,7 +146,7 @@ class State:
         #     else:
         #         print("WTF at ", player_new)
         #     # self.ucsCost = 2
-        self.spaces.append(self.player)
+        # self.spaces.append(self.player)
         self.player = player_new
         self.move_history.append(direction)
 
