@@ -1,0 +1,33 @@
+Intializing Board...
+8 8
+########
+#X . .X#
+#X   # #
+## # # #
+X#  $  #
+ #  $@ #
+ #X   X#
+ #######
+
+Solving levels/misc/easy4.txt...
+
+1. Breadth-first search
+Nodes generated: 11787
+Nodes repeated: 7306
+Fringe nodes: 266
+Explored nodes: 2895
+Duration: 151.03126502037048 secs
+
+Would be 90 secs ish if we don't update cell type
+
+8 8
+########
+#X@   X#
+#X   # #
+## # # #
+X#     #
+ #     #
+ #X   X#
+ #######
+Puzzle Solved...
+(base) yangzis-mbp:SokobanSolver_MR_Final yangzijiang$ 
