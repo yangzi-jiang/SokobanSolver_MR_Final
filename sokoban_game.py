@@ -17,10 +17,11 @@ class Sokoban:
             reader = f.read()
             lines = reader.split('\n')
             x = 0
-            y= 0
+            y = 0
 
             # x is column, and yis row
             for line in lines:
+                row = []
                 for char in line:
                     if char == '#':
                         new_board.add_wall(x, y)
@@ -28,11 +29,13 @@ class Sokoban:
                         new_board.add_goal(x, y)
                     elif char == '@':
                         new_board.set_player(x, y)
+                        new_board.add_space(x, y) # A Player
                     elif char == '+':
                         new_board.set_player(x, y)
                         new_board.add_goal(x, y)
                     elif char == '$':
                         new_board.add_box(x, y)
+                        new_board.add_space(x, y)
                     elif char == '*':
                         new_board.add_box(x, y)
                         new_board.add_goal(x, y)
@@ -40,9 +43,12 @@ class Sokoban:
                         new_board.add_space(x, y)
                     x += 1
                     self.col_size = x
+                    row.append(char)
                 y+= 1
                 x = 0
                 self.row_size = y
+                new_board.add_full_board(row)
+
             # Adding static deadlocks after building the walls
             x = 0
             y= 0
@@ -86,6 +92,13 @@ class Sokoban:
             # ass.search(board)
             pass
 
+    def print_2d_board(self, board):
+        for i in range(len(board.full_board)):
+            for j in range(len(board.full_board[i])):
+                # temp = temp + 
+                print(board.full_board[i][j], end = "")
+            print()
+
     def print_board_lists(self, board):
         print('Walls Locations:')
         print(*board.walls)
@@ -104,44 +117,45 @@ class Sokoban:
 
     def print_board(self, board):
         b = [None] * (self.col_size * self.row_size)
+        
+        print(self.col_size + 1, self.row_size + 1)
+
         # The order matters
         for element in board.walls:
             x = Location.__x_cord__(element)
             y = Location.__y_cord__(element)
-            b[x*self.col_size + y]= '#'
+            b[x + y * self.col_size]= '#'
 
         for element in board.goals:
             x = Location.__x_cord__(element)
             y= Location.__y_cord__(element)
-            b[x*self.col_size + y]= '.'
+            b[x + y * self.col_size]= '.'
 
         for element in board.boxes:
             x = Location.__x_cord__(element)
             y= Location.__y_cord__(element)
-            b[x*self.col_size + y]= '$'
+            b[x + y * self.col_size]= '$'
         
         for element in board.spaces:
             x = Location.__x_cord__(element)
             y= Location.__y_cord__(element)
-            b[x*self.col_size + y]= ' '
+            b[x + y * self.col_size]= ' '
         
         for element in board.deadlocks:
             x = Location.__x_cord__(element)
             y = Location.__y_cord__(element)
-            b[x*self.col_size + y]= 'X'
+            b[x + y * self.col_size]= 'X'
         
         x = Location.__x_cord__(board.player)
         y = Location.__y_cord__(board.player)
-        b[x*self.col_size + y]= '@'
+        b[x + y * self.col_size]= '@'
 
         for element in board.boxes_on_goal:
             x = Location.__x_cord__(element)
             y = Location.__y_cord__(element)
-            b[x*self.col_size + y]= '*'
-
-        print(self.row_size, self.col_size)
+            b[x + y * self.col_size]= '*'
 
         for row in range(self.row_size):
             for col in range(self.col_size):
-                print(b[row + col * (self.col_size)], end = "")
+                print(b[col + row * (self.col_size)], end = "")
             print()
