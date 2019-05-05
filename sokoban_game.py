@@ -17,7 +17,7 @@ class Sokoban:
             reader = f.read()
             lines = reader.split('\n')
             x = 0
-            y= 0
+            y = 0
 
             # x is column, and yis row
             for line in lines:
@@ -92,7 +92,7 @@ class Sokoban:
             # ass.search(board)
             pass
 
-    def print_full_board(self, board):
+    def print_2d_board(self, board):
         for i in range(len(board.full_board)):
             for j in range(len(board.full_board[i])):
                 # temp = temp + 
@@ -117,44 +117,45 @@ class Sokoban:
 
     def print_board(self, board):
         b = [None] * (self.col_size * self.row_size)
+        
+        print(self.col_size + 1, self.row_size + 1)
+
         # The order matters
         for element in board.walls:
             x = Location.__x_cord__(element)
             y = Location.__y_cord__(element)
-            b[x*self.col_size + y]= '#'
+            b[x + y * self.col_size]= '#'
 
         for element in board.goals:
             x = Location.__x_cord__(element)
             y= Location.__y_cord__(element)
-            b[x*self.col_size + y]= '.'
+            b[x + y * self.col_size]= '.'
 
         for element in board.boxes:
             x = Location.__x_cord__(element)
             y= Location.__y_cord__(element)
-            b[x*self.col_size + y]= '$'
+            b[x + y * self.col_size]= '$'
         
         for element in board.spaces:
             x = Location.__x_cord__(element)
             y= Location.__y_cord__(element)
-            b[x*self.col_size + y]= ' '
+            b[x + y * self.col_size]= ' '
         
         for element in board.deadlocks:
             x = Location.__x_cord__(element)
             y = Location.__y_cord__(element)
-            b[x*self.col_size + y]= 'X'
+            b[x + y * self.col_size]= 'X'
         
         x = Location.__x_cord__(board.player)
         y = Location.__y_cord__(board.player)
-        b[x*self.col_size + y]= '@'
+        b[x + y * self.col_size]= '@'
 
         for element in board.boxes_on_goal:
             x = Location.__x_cord__(element)
             y = Location.__y_cord__(element)
-            b[x*self.col_size + y]= '*'
-
-        print(self.row_size, self.col_size)
+            b[x + y * self.col_size]= '*'
 
         for row in range(self.row_size):
             for col in range(self.col_size):
-                print(b[row + col * (self.col_size)], end = "")
+                print(b[col + row * (self.col_size)], end = "")
             print()
