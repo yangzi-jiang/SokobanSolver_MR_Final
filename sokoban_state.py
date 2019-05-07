@@ -137,27 +137,27 @@ class State:
                     moves_available.append(d)
         return moves_available
 
-    def moves_available1(self):
-        moves_available= []
+    # def moves_available1(self):
+    #     moves_available= []
 
-        # This thing is slow, should be reverse back to a 2-d array representation?
-        for d in DIRECTIONS:
-            # Box's current cordinates
-            x_cord = Location.__x_cord__(self.player + d.location)
-            y_cord = Location.__y_cord__(self.player + d.location)
+    #     # This thing is slow, should be reverse back to a 2-d array representation?
+    #     for d in DIRECTIONS:
+    #         # Box's current cordinates
+    #         x_cord = Location.__x_cord__(self.player + d.location)
+    #         y_cord = Location.__y_cord__(self.player + d.location)
 
-            # Box's new cordinates
-            new_x_cord = Location.__x_cord__(self.player + d.location.space_past_box())
-            new_y_cord = Location.__y_cord__(self.player + d.location.space_past_box())
+    #         # Box's new cordinates
+    #         new_x_cord = Location.__x_cord__(self.player + d.location.space_past_box())
+    #         new_y_cord = Location.__y_cord__(self.player + d.location.space_past_box())
             
-            if self.full_board[y_cord][x_cord] is not self.TILE_WALL:
-                if self.full_board[y_cord][x_cord] is self.TILE_BOX:
-                    # Check if box can be pushed to next space
-                    if self.full_board[new_y_cord][new_x_cord] is not self.TILE_BOX + self.TILE_WALL + self.TILE_DEADLOCK:
-                        moves_available.append(d)
-                else:
-                    moves_available.append(d)
-        return moves_available
+    #         if self.full_board[y_cord][x_cord] is not self.TILE_WALL:
+    #             if self.full_board[y_cord][x_cord] is self.TILE_BOX:
+    #                 # Check if box can be pushed to next space
+    #                 if self.full_board[new_y_cord][new_x_cord] is not self.TILE_BOX + self.TILE_WALL + self.TILE_DEADLOCK:
+    #                     moves_available.append(d)
+    #             else:
+    #                 moves_available.append(d)
+    #     return moves_available
 
     def move(self, direction):
         ''' moves player and box '''
