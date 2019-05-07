@@ -7,7 +7,7 @@ Runs experiment
 '''
 
 PUZZLES = ['easy4.txt', 'minicosmos1.txt', 'minicosmos2.txt',
-           'minicosmos3.txt', 'simple1.txt']
+           'minicosmos3.txt', 'simple1.txt', 'original1.txt']
 
 def run_search(s, filename, search_selection):
     board = s.new_game(filename)
@@ -39,6 +39,7 @@ def main():
     print("2: minicosmos2")
     print("3: minicosmos3")
     print("4: simple1")
+    print("5: original1")
     user_input2 = input("Input a number from above: ")
     puzzle_selection = int(user_input2)
 
