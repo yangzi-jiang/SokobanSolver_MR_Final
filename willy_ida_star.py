@@ -66,16 +66,18 @@ def IDAstar(b):
         # print ("current pathLimit = ", pathLimit)
         b.g_cost = 0
         openSet.insert(0, b)
+        fringe_nodes += 1
         ht = HashTable()
         nodes = 0
 
         while len(openSet) > 0:
             currentState = openSet.pop(0)
+            fringe_nodes -= 1
 
             nodes = nodes + 1
             if currentState.is_win():
                 end = time()
-                print_results(currentState, nodes, 0, 0, 0, end - start)
+                print_results(currentState, nodes, nodes_repeated, fringe_nodes, nodes_explored, end - start)
                 return currentState # SOLUTION FOUND!!!
 
             if nodes % 1000000 == 0:
@@ -86,6 +88,8 @@ def IDAstar(b):
 
             if currentState.f_cost <= pathLimit:
                 closedSet.insert(0, currentState)
+                nodes_explored += 1
+
                 # get the sucessors of the current state
                 for x in successors(currentState):
                     # test if node has been "closed"
@@ -94,6 +98,7 @@ def IDAstar(b):
 
                     # check if this has already been generated
                     if ht.checkAdd(x):
+                        nodes_repeated += 1
                         continue
 
                     # compute G for each
@@ -104,6 +109,7 @@ def IDAstar(b):
                     # x.setF(x.getG()+ h(x))
                     #x.setParent(currentState)
                     openSet.insert(0, x) # push
+                    fringe_nodes += 1
             else:
                 visitSet.insert(0, currentState)
 
@@ -126,5 +132,6 @@ def IDAstar(b):
 
         # move nodes from VISIT to OPEN and reset closedSet
         openSet.extend(visitSet)
+        fringe_nodes += len(visitSet)
         visitSet = []
         closedSet = []
