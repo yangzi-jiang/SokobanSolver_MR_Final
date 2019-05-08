@@ -1,9 +1,161 @@
 Puzzle Name,Search Method,Is Solved,Heuristic,Iteration Step,Nodes Generated,Nodes Repeated,Fringe Nodes,Explored Nodes,Duration,Path
-sokwhole/sokwhole_1.txt,bfs,Solved,None,None,2,0,0,1,0.001413106918334961,d|
-sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Fixed (1),2,0,0,1,0.0011830329895019531,d|
-sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Fixed (4),2,0,0,1,0.0010061264038085938,d|
-sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Dynamic,2,0,0,1,0.0007979869842529297,d|
-sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Fixed (1),2,0,0,1,0.0033636093139648438,d|
-sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Fixed (4),2,0,0,1,0.0007050037384033203,d|
-sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Dynamic,2,0,0,1,0.000978231430053711,d|
-sokwhole/sokwhole_10.txt,IDA*,Solved,Manhattan,Dynamic,31,0,40,874,4.102331876754761,r|d|r|d|r|d|l|r|u|l|u|l|u|l|l|l|d|d|d|r|d|r|d|r|r|u|
+sokwhole/sokwhole_01.txt,bfs,Solved,None,None,2,0,0,1,0.0009529590606689453,d|
+sokwhole/sokwhole_01.txt,IDA*,Solved,Manhattan,Fixed (1),2,0,0,1,0.0004570484161376953,d|
+sokwhole/sokwhole_01.txt,IDA*,Solved,Manhattan,Fixed (4),2,0,0,1,0.00046706199645996094,d|
+sokwhole/sokwhole_01.txt,IDA*,Solved,Manhattan,Dynamic,2,0,0,1,0.0006320476531982422,d|
+sokwhole/sokwhole_01.txt,IDA*,Solved,Manhattan,Fixed (1),2,0,0,1,0.0011129379272460938,d|
+sokwhole/sokwhole_01.txt,IDA*,Solved,Manhattan,Fixed (4),2,0,0,1,0.0004239082336425781,d|
+sokwhole/sokwhole_01.txt,IDA*,Solved,Manhattan,Dynamic,2,0,0,1,0.0010101795196533203,d|
+sokwhole/sokwhole_02.txt,bfs,Solved,None,None,2,0,0,1,0.0021817684173583984,l|
+sokwhole/sokwhole_02.txt,IDA*,Solved,Manhattan,Fixed (1),2,0,0,1,0.003086090087890625,l|
+sokwhole/sokwhole_02.txt,IDA*,Solved,Manhattan,Fixed (4),2,0,0,1,0.0006380081176757812,l|
+sokwhole/sokwhole_02.txt,IDA*,Solved,Manhattan,Dynamic,2,0,0,1,0.001013040542602539,l|
+sokwhole/sokwhole_02.txt,IDA*,Solved,Manhattan,Fixed (1),2,0,0,1,0.0007407665252685547,l|
+sokwhole/sokwhole_02.txt,IDA*,Solved,Manhattan,Fixed (4),2,0,0,1,0.0006442070007324219,l|
+sokwhole/sokwhole_02.txt,IDA*,Solved,Manhattan,Dynamic,2,0,0,1,0.0006558895111083984,l|
+sokwhole/sokwhole_03.txt,bfs,Solved,None,None,16,6,1,8,0.025801897048950195,l|l|u|d|r|r|u|l|
+sokwhole/sokwhole_03.txt,IDA*,Solved,Manhattan,Fixed (1),9,0,2,27,0.06693196296691895,l|l|u|d|r|r|u|l|
+sokwhole/sokwhole_03.txt,IDA*,Solved,Manhattan,Fixed (4),9,0,2,15,0.03048110008239746,l|l|u|d|r|r|u|l|
+sokwhole/sokwhole_03.txt,IDA*,Solved,Manhattan,Dynamic,9,0,2,15,0.04869890213012695,l|l|u|d|r|r|u|l|
+sokwhole/sokwhole_03.txt,IDA*,Solved,Manhattan,Fixed (1),9,0,2,25,0.04227709770202637,l|l|u|d|r|r|u|l|
+sokwhole/sokwhole_03.txt,IDA*,Solved,Manhattan,Fixed (4),9,0,2,14,0.03310990333557129,l|l|u|d|r|r|u|l|
+sokwhole/sokwhole_03.txt,IDA*,Solved,Manhattan,Dynamic,9,0,2,22,0.032714128494262695,l|l|u|d|r|r|u|l|
+sokwhole/sokwhole_04.txt,bfs,Solved,None,None,48,22,0,25,0.06757092475891113,u|l|l|d|l|r|u|r|r|d|r|d|d|l|l|l|l|u|
+sokwhole/sokwhole_04.txt,IDA*,Solved,Manhattan,Fixed (1),26,0,1,131,0.2822248935699463,u|l|l|d|l|r|u|r|r|d|r|d|d|l|l|l|l|u|
+sokwhole/sokwhole_04.txt,IDA*,Solved,Manhattan,Fixed (4),26,0,1,51,0.14076900482177734,u|l|l|d|l|r|u|r|r|d|r|d|d|l|l|l|l|u|
+sokwhole/sokwhole_04.txt,IDA*,Solved,Manhattan,Dynamic,26,0,1,77,0.17731809616088867,u|l|l|d|l|r|u|r|r|d|r|d|d|l|l|l|l|u|
+sokwhole/sokwhole_04.txt,IDA*,Solved,Manhattan,Fixed (1),26,0,1,146,0.32438087463378906,u|l|l|d|l|r|u|r|r|d|r|d|d|l|l|l|l|u|
+sokwhole/sokwhole_04.txt,IDA*,Solved,Manhattan,Fixed (4),26,0,1,72,0.2249772548675537,u|l|l|d|l|r|u|r|r|d|r|d|d|l|l|l|l|u|
+sokwhole/sokwhole_04.txt,IDA*,Solved,Manhattan,Dynamic,26,0,1,96,0.236710786819458,u|l|l|d|l|r|u|r|r|d|r|d|d|l|l|l|l|u|
+sokwhole/sokwhole_05.txt,bfs,Solved,None,None,50,22,1,26,0.08208012580871582,r|d|r|r|r|r|u|r|u|u|l|l|d|l|r|u|r|r|d|d|l|d|l|l|u|
+sokwhole/sokwhole_05.txt,IDA*,Solved,Manhattan,Fixed (1),29,0,2,319,0.9380948543548584,r|d|r|r|r|r|u|r|u|u|l|l|d|l|r|u|r|r|d|d|l|d|l|l|u|
+sokwhole/sokwhole_05.txt,IDA*,Solved,Manhattan,Fixed (4),29,0,2,122,0.5261662006378174,r|d|r|r|r|r|u|r|u|u|l|l|d|l|r|u|r|r|d|d|l|d|l|l|u|
+sokwhole/sokwhole_05.txt,IDA*,Solved,Manhattan,Dynamic,29,0,2,288,1.010396957397461,r|d|r|r|r|r|u|r|u|u|l|l|d|l|r|u|r|r|d|d|l|d|l|l|u|
+sokwhole/sokwhole_05.txt,IDA*,Solved,Manhattan,Fixed (1),28,0,2,396,1.3339178562164307,r|d|r|r|r|r|u|r|u|u|l|l|d|l|r|u|r|r|d|d|l|d|l|l|u|
+sokwhole/sokwhole_05.txt,IDA*,Solved,Manhattan,Fixed (4),28,0,2,119,0.6647610664367676,r|d|r|r|r|r|u|r|u|u|l|l|d|l|r|u|r|r|d|d|l|d|l|l|u|
+sokwhole/sokwhole_05.txt,IDA*,Solved,Manhattan,Dynamic,28,0,2,381,1.735145092010498,r|d|r|r|r|r|u|r|u|u|l|l|d|l|r|u|r|r|d|d|l|d|l|l|u|
+sokwhole/sokwhole_06.txt,bfs,Solved,None,None,205,102,7,90,0.6045141220092773,r|r|r|u|r|u|u|l|l|l|l|l|l|d|r|l|u|r|r|r|r|r|r|d|d|l|d|l|l|l|l|u|d|r|r|u|
+sokwhole/sokwhole_06.txt,IDA*,Solved,Manhattan,Fixed (1),100,0,5,728,3.7316198348999023,r|r|r|u|r|u|u|l|l|l|l|l|l|d|r|u|r|r|r|r|r|d|d|l|d|l|l|u|d|l|l|u|
+sokwhole/sokwhole_06.txt,IDA*,Solved,Manhattan,Fixed (4),64,0,11,379,2.088785171508789,r|r|r|u|r|u|u|l|l|l|l|l|l|d|r|l|u|r|r|r|r|r|r|d|d|l|d|l|l|l|l|u|d|r|r|u|
+sokwhole/sokwhole_06.txt,IDA*,Solved,Manhattan,Dynamic,106,0,5,737,3.431389093399048,r|r|r|u|r|u|u|l|l|l|l|l|l|d|r|u|r|r|r|r|r|d|d|l|d|l|l|u|d|l|l|u|
+sokwhole/sokwhole_06.txt,IDA*,Solved,Manhattan,Fixed (1),102,0,17,1092,5.025209903717041,r|r|r|u|r|u|u|l|l|l|l|l|l|d|r|u|r|r|r|r|r|d|d|l|d|l|l|u|d|l|l|u|
+sokwhole/sokwhole_06.txt,IDA*,Solved,Manhattan,Fixed (4),63,0,12,439,1.617784023284912,r|r|r|u|r|u|u|l|l|l|l|l|l|d|r|l|u|r|r|r|r|r|r|d|d|l|d|l|l|l|l|u|d|r|r|u|
+sokwhole/sokwhole_06.txt,IDA*,Solved,Manhattan,Dynamic,102,0,15,1074,4.5070719718933105,r|r|r|u|r|u|u|l|l|l|l|l|l|d|r|u|r|r|r|r|r|d|d|l|d|l|l|u|d|l|l|u|
+sokwhole/sokwhole_07.txt,bfs,Solved,None,None,68,33,4,26,0.10413789749145508,l|r|u|l|u|l|l|d|r|l|d|d|r|u|
+sokwhole/sokwhole_07.txt,IDA*,Solved,Manhattan,Fixed (1),25,0,23,206,0.6819968223571777,l|r|u|l|u|l|l|d|r|l|d|d|r|u|
+sokwhole/sokwhole_07.txt,IDA*,Solved,Manhattan,Fixed (4),28,0,19,77,0.28700900077819824,l|r|u|l|u|l|l|d|r|l|d|d|r|u|
+sokwhole/sokwhole_07.txt,IDA*,Solved,Manhattan,Dynamic,25,0,23,199,0.6258800029754639,l|r|u|l|u|l|l|d|r|l|d|d|r|u|
+sokwhole/sokwhole_07.txt,IDA*,Solved,Manhattan,Fixed (1),26,0,19,335,0.9174280166625977,l|r|u|l|u|l|l|d|r|l|d|d|r|u|
+sokwhole/sokwhole_07.txt,IDA*,Solved,Manhattan,Fixed (4),25,0,19,75,0.20677900314331055,l|r|u|l|u|l|l|d|r|l|d|d|r|u|
+sokwhole/sokwhole_07.txt,IDA*,Solved,Manhattan,Dynamic,26,0,19,328,1.0882189273834229,l|r|u|l|u|l|l|d|r|l|d|d|r|u|
+sokwhole/sokwhole_08.txt,bfs,Solved,None,None,218,117,3,84,0.34006404876708984,r|r|l|u|u|r|r|r|d|u|l|l|d|
+sokwhole/sokwhole_08.txt,IDA*,Solved,Manhattan,Fixed (1),102,0,6,165,0.5077240467071533,r|r|l|u|u|r|d|u|r|r|d|
+sokwhole/sokwhole_08.txt,IDA*,Solved,Manhattan,Fixed (4),74,0,22,136,0.3971288204193115,r|r|l|u|u|r|r|r|d|u|l|l|d|
+sokwhole/sokwhole_08.txt,IDA*,Solved,Manhattan,Dynamic,59,0,22,134,0.4760468006134033,r|r|l|u|u|r|r|r|d|u|l|l|d|
+sokwhole/sokwhole_08.txt,IDA*,Solved,Manhattan,Fixed (1),41,0,21,124,0.30287694931030273,r|r|l|u|u|r|d|u|r|r|d|
+sokwhole/sokwhole_08.txt,IDA*,Solved,Manhattan,Fixed (4),35,0,7,39,0.13796496391296387,r|r|l|u|u|r|d|u|r|r|d|
+sokwhole/sokwhole_08.txt,IDA*,Solved,Manhattan,Dynamic,56,0,22,131,0.3383939266204834,r|r|l|u|u|r|r|r|d|u|l|l|d|
+sokwhole/sokwhole_09.txt,bfs,Solved,None,None,171,86,6,71,0.3708658218383789,r|d|r|r|u|r|r|u|u|l|r|u|l|r|d|d|d|l|l|d|l|l|u|r|
+sokwhole/sokwhole_09.txt,IDA*,Solved,Manhattan,Fixed (1),72,0,84,1214,11.335003137588501,r|d|r|r|u|r|r|u|u|l|r|u|l|r|d|d|d|l|l|d|l|l|u|r|
+sokwhole/sokwhole_09.txt,IDA*,Solved,Manhattan,Fixed (4),79,0,45,545,3.4273741245269775,r|d|r|r|u|r|r|u|u|l|r|u|l|r|d|d|d|l|l|d|l|l|u|r|
+sokwhole/sokwhole_09.txt,IDA*,Solved,Manhattan,Dynamic,63,0,59,735,2.768172025680542,r|d|r|r|u|r|r|u|u|l|r|u|l|r|d|d|d|l|l|d|l|l|u|r|
+sokwhole/sokwhole_09.txt,IDA*,Solved,Manhattan,Fixed (1),63,0,124,1704,5.890266180038452,r|d|r|r|u|r|r|u|u|l|r|u|l|r|d|d|d|l|l|d|l|l|u|r|
+sokwhole/sokwhole_09.txt,IDA*,Solved,Manhattan,Fixed (4),73,0,43,487,1.698317050933838,r|d|r|r|u|r|r|u|u|l|r|u|l|r|d|d|d|l|l|d|l|l|u|r|
+sokwhole/sokwhole_09.txt,IDA*,Solved,Manhattan,Dynamic,63,0,103,1019,3.3499839305877686,r|d|r|r|u|r|r|u|u|l|r|u|l|r|d|d|d|l|l|d|l|l|u|r|
+sokwhole/sokwhole_10.txt,bfs,Solved,None,None,84,37,6,39,0.13677978515625,r|d|r|d|r|d|l|r|u|l|u|l|u|l|l|l|d|d|d|r|d|r|d|r|r|u|
+sokwhole/sokwhole_10.txt,IDA*,Solved,Manhattan,Fixed (1),339,0,49,1590,6.29210901260376,r|d|r|d|r|d|l|u|u|l|u|l|l|l|d|d|d|r|d|r|d|r|r|u|
+sokwhole/sokwhole_10.txt,IDA*,Solved,Manhattan,Fixed (4),36,0,33,731,2.7151079177856445,r|d|r|d|r|d|l|r|u|l|u|l|u|l|l|l|d|d|d|r|d|r|d|r|r|u|
+sokwhole/sokwhole_10.txt,IDA*,Solved,Manhattan,Dynamic,31,0,40,874,3.3171048164367676,r|d|r|d|r|d|l|r|u|l|u|l|u|l|l|l|d|d|d|r|d|r|d|r|r|u|
+sokwhole/sokwhole_10.txt,IDA*,Solved,Manhattan,Fixed (1),406,0,86,3029,31.47528600692749,r|d|r|d|r|d|l|u|u|l|u|l|l|l|d|d|d|r|d|r|d|r|r|u|
+sokwhole/sokwhole_10.txt,IDA*,Solved,Manhattan,Fixed (4),36,0,27,949,15.273851156234741,r|d|r|d|r|d|l|r|u|l|u|l|u|l|l|l|d|d|d|r|d|r|d|r|r|u|
+sokwhole/sokwhole_10.txt,IDA*,Solved,Manhattan,Dynamic,31,0,104,1654,20.675967931747437,r|d|r|d|r|d|l|r|u|l|u|l|u|l|l|l|d|d|d|r|d|r|d|r|r|u|
+sokwhole/sokwhole_11.txt,bfs,Solved,None,None,308,155,10,132,0.7347300052642822,l|u|l|l|u|u|r|l|u|l|l|d|d|d|d|r|d|r|r|u|d|l|l|l|u|u|u|u|u|r|r|d|d|d|r|l|u|u|r|d|
+sokwhole/sokwhole_11.txt,IDA*,Solved,Manhattan,Fixed (1),181,0,20,1108,4.150906801223755,l|u|l|l|u|u|r|d|l|d|r|l|u|u|u|l|l|d|d|d|d|d|r|r|r|u|
+sokwhole/sokwhole_11.txt,IDA*,Solved,Manhattan,Fixed (4),105,0,26,550,3.9541702270507812,l|u|l|l|u|u|r|d|l|d|r|l|u|r|u|l|u|l|l|d|d|d|d|r|d|r|r|u|
+sokwhole/sokwhole_11.txt,IDA*,Solved,Manhattan,Dynamic,181,0,20,980,9.782652854919434,l|u|l|l|u|u|r|d|l|d|r|l|u|u|u|l|l|d|d|d|d|d|r|r|r|u|
+sokwhole/sokwhole_11.txt,IDA*,Solved,Manhattan,Fixed (1),207,0,22,1795,8.739840984344482,l|u|l|l|u|u|r|d|l|d|r|l|u|u|u|l|l|d|d|d|d|r|d|r|r|u|
+sokwhole/sokwhole_11.txt,IDA*,Solved,Manhattan,Fixed (4),90,0,20,510,2.2594432830810547,l|u|l|l|u|u|r|d|l|d|r|l|u|r|u|l|u|l|l|d|d|d|d|r|d|r|r|u|
+sokwhole/sokwhole_11.txt,IDA*,Solved,Manhattan,Dynamic,207,0,22,1562,6.441361904144287,l|u|l|l|u|u|r|d|l|d|r|l|u|u|u|l|l|d|d|d|d|r|d|r|r|u|
+sokwhole/sokwhole_12.txt,bfs,Solved,None,None,510,276,10,189,1.0443260669708252,d|r|r|r|r|d|d|l|d|l|l|u|d|r|r|d|d|l|u|r|u|u|l|r|r|u|u|l|l|d|
+sokwhole/sokwhole_12.txt,IDA*,Solved,Manhattan,Fixed (1),156,0,145,1769,11.301714897155762,d|r|r|r|r|d|d|l|d|l|l|u|d|r|r|d|d|l|u|r|u|u|l|r|r|u|u|l|l|d|
+sokwhole/sokwhole_12.txt,IDA*,Solved,Manhattan,Fixed (4),180,0,74,745,4.538085222244263,d|r|r|r|r|d|d|l|d|l|l|u|d|r|r|d|d|l|u|r|u|u|l|r|r|u|u|l|l|d|
+sokwhole/sokwhole_12.txt,IDA*,Solved,Manhattan,Dynamic,147,0,126,1384,6.002896070480347,d|r|r|r|r|d|d|l|d|l|l|u|d|r|r|d|d|l|u|r|u|u|l|r|r|u|u|l|l|d|
+sokwhole/sokwhole_12.txt,IDA*,Solved,Manhattan,Fixed (1),151,0,316,3488,15.216628074645996,d|r|r|r|r|d|d|l|d|l|l|u|d|r|r|d|d|l|u|r|u|u|l|r|r|u|u|l|l|d|
+sokwhole/sokwhole_12.txt,IDA*,Solved,Manhattan,Fixed (4),187,0,101,1029,4.305674076080322,d|r|r|r|r|d|d|l|d|l|l|u|d|r|r|d|d|l|u|r|u|u|l|r|r|u|u|l|l|d|
+sokwhole/sokwhole_12.txt,IDA*,Solved,Manhattan,Dynamic,151,0,316,2764,14.614607095718384,d|r|r|r|r|d|d|l|d|l|l|u|d|r|r|d|d|l|u|r|u|u|l|r|r|u|u|l|l|d|
+sokwhole/sokwhole_13.txt,bfs,Solved,None,None,509,276,21,179,1.9875538349151611,r|u|r|r|d|l|r|u|l|l|l|d|d|r|l|u|r|l|d|r|d|r|l|u|l|u|r|u|r|r|d|l|r|u|l|l|l|d|d|r|d|r|u|l|d|r|d|r|r|u|l|r|d|l|l|u|l|u|l|u|u|r|d|
+sokwhole/sokwhole_13.txt,IDA*,Solved,Manhattan,Fixed (1),190,0,56,1585,8.796348094940186,r|u|r|r|d|l|u|l|l|d|d|r|d|r|u|d|d|r|r|u|l|d|l|u|l|u|l|u|u|r|d|
+sokwhole/sokwhole_13.txt,IDA*,Solved,Manhattan,Fixed (4),201,0,29,1003,4.695835113525391,r|u|r|r|d|l|r|u|l|l|l|d|d|r|d|r|u|l|d|r|d|r|r|u|l|r|d|l|l|u|l|u|l|u|u|r|d|
+sokwhole/sokwhole_13.txt,IDA*,Solved,Manhattan,Dynamic,190,0,56,1530,6.937859058380127,r|u|r|r|d|l|u|l|l|d|d|r|d|r|u|d|d|r|r|u|l|d|l|u|l|u|l|u|u|r|d|
+sokwhole/sokwhole_13.txt,IDA*,Solved,Manhattan,Fixed (1),365,0,181,4118,23.77955389022827,r|u|r|r|d|l|u|l|l|d|d|r|d|r|u|d|d|r|r|u|l|d|l|u|l|u|l|u|u|r|d|
+sokwhole/sokwhole_13.txt,IDA*,Solved,Manhattan,Fixed (4),191,0,32,1114,4.592864036560059,r|u|r|r|d|l|r|u|l|l|l|d|d|r|d|r|u|l|d|r|d|r|r|u|l|r|d|l|l|u|l|u|l|u|u|r|d|
+sokwhole/sokwhole_13.txt,IDA*,Solved,Manhattan,Dynamic,260,0,485,4034,18.047198057174683,r|u|r|r|d|l|u|l|l|d|d|r|d|r|u|d|d|r|r|u|l|d|l|u|l|u|l|u|u|r|d|
+sokwhole/sokwhole_14.txt,bfs,Solved,None,None,79,30,14,33,0.12860798835754395,l|l|u|l|r|d|r|r|u|l|r|d|l|l|l|u|u|l|l|d|r|l|u|u|u|r|d|l|d|r|
+sokwhole/sokwhole_14.txt,IDA*,Solved,Manhattan,Fixed (1),205,0,31,1411,6.256795883178711,l|l|u|l|r|d|r|r|u|l|d|l|l|u|u|l|l|d|r|l|u|u|u|r|d|l|d|r|
+sokwhole/sokwhole_14.txt,IDA*,Solved,Manhattan,Fixed (4),34,0,57,594,2.7059881687164307,l|l|u|l|r|d|r|r|u|l|r|d|l|l|l|u|u|l|l|d|r|l|u|u|u|r|d|l|d|r|
+sokwhole/sokwhole_14.txt,IDA*,Solved,Manhattan,Dynamic,159,0,37,1118,5.609924077987671,l|l|u|l|r|d|r|r|u|l|d|l|l|u|u|l|l|u|u|r|d|l|d|r|l|d|r|
+sokwhole/sokwhole_14.txt,IDA*,Solved,Manhattan,Fixed (1),238,0,79,2164,11.354894876480103,l|l|u|l|r|d|r|r|u|l|d|l|l|u|u|l|l|d|r|l|u|u|u|r|d|l|d|r|
+sokwhole/sokwhole_14.txt,IDA*,Solved,Manhattan,Fixed (4),34,0,59,726,4.164199352264404,l|l|u|l|r|d|r|r|u|l|r|d|l|l|l|u|u|l|l|d|r|l|u|u|u|r|d|l|d|r|
+sokwhole/sokwhole_14.txt,IDA*,Solved,Manhattan,Dynamic,238,0,79,2101,12.837110996246338,l|l|u|l|r|d|r|r|u|l|d|l|l|u|u|l|l|d|r|l|u|u|u|r|d|l|d|r|
+sokwhole/sokwhole_15.txt,bfs,Solved,None,None,479,252,12,190,0.8696279525756836,r|d|r|d|d|l|l|l|u|u|r|u|r|u|u|r|r|d|l|d|l|l|d|l|d|d|r|r|r|u|u|l|r|u|l|d|r|d|d|l|l|l|u|u|r|r|l|l|d|d|r|r|r|u|u|
+sokwhole/sokwhole_15.txt,IDA*,Solved,Manhattan,Fixed (1),201,0,49,3535,14.085644006729126,r|d|r|d|d|l|l|l|u|u|r|u|r|u|u|r|r|d|l|d|l|l|d|l|d|d|r|r|r|u|u|u|l|l|d|r|l|l|d|d|r|r|r|u|u|
+sokwhole/sokwhole_15.txt,IDA*,Solved,Manhattan,Fixed (4),368,0,10,1628,6.50972318649292,r|d|r|d|d|l|l|l|u|u|r|u|r|u|u|r|r|d|l|d|l|l|d|l|d|d|r|r|r|u|u|u|l|l|d|r|l|l|d|d|r|r|r|u|u|
+sokwhole/sokwhole_15.txt,IDA*,Solved,Manhattan,Dynamic,205,0,47,3562,14.377427339553833,r|d|r|d|d|l|l|l|u|u|r|u|r|u|u|r|r|d|l|d|l|l|d|l|d|d|r|r|r|u|u|u|l|l|d|r|l|l|d|d|r|r|r|u|u|
+sokwhole/sokwhole_15.txt,IDA*,Solved,Manhattan,Fixed (1),205,0,173,9567,38.707786321640015,r|d|r|d|d|l|l|l|u|u|r|u|r|u|u|r|r|d|l|d|l|l|d|l|d|d|r|r|r|u|u|u|l|l|d|r|l|l|d|d|r|r|r|u|u|
+sokwhole/sokwhole_15.txt,IDA*,Solved,Manhattan,Fixed (4),205,0,31,1642,6.137150049209595,r|d|r|d|d|l|l|l|u|u|r|u|r|u|u|r|r|d|l|d|l|l|d|l|d|d|r|r|r|u|u|u|l|l|d|r|l|l|d|d|r|r|r|u|u|
+sokwhole/sokwhole_15.txt,IDA*,Solved,Manhattan,Dynamic,207,0,138,8225,32.823684215545654,r|d|r|d|d|l|l|l|u|u|r|u|r|u|u|r|r|d|l|d|l|l|d|l|d|d|r|r|r|u|u|u|l|l|d|r|l|l|d|d|r|r|r|u|u|
+sokwhole/sokwhole_16.txt,bfs,Solved,None,None,941,536,7,323,1.508608102798462,l|l|r|u|l|u|l|u|l|l|d|r|d|u|l|l|d|r|
+sokwhole/sokwhole_16.txt,IDA*,Solved,Manhattan,Fixed (1),67,0,100,584,1.700166940689087,l|l|r|u|l|u|l|u|l|l|d|r|d|u|l|l|d|r|
+sokwhole/sokwhole_16.txt,IDA*,Solved,Manhattan,Fixed (4),76,0,59,202,0.593513011932373,l|l|r|u|l|u|l|u|l|l|d|r|d|u|l|l|d|r|
+sokwhole/sokwhole_16.txt,IDA*,Solved,Manhattan,Dynamic,109,0,78,363,1.1039178371429443,l|l|r|u|l|u|l|u|l|l|d|r|d|u|l|l|d|r|
+sokwhole/sokwhole_16.txt,IDA*,Solved,Manhattan,Fixed (1),70,0,288,1178,3.6345059871673584,l|l|r|u|l|u|l|u|l|l|d|r|d|u|l|l|d|r|
+sokwhole/sokwhole_16.txt,IDA*,Solved,Manhattan,Fixed (4),101,0,94,495,1.5587050914764404,l|l|r|u|l|u|l|u|l|l|d|r|d|u|l|l|d|r|
+sokwhole/sokwhole_16.txt,IDA*,Solved,Manhattan,Dynamic,70,0,62,257,0.7519829273223877,l|l|r|u|l|u|l|u|l|l|d|r|d|u|l|l|d|r|
+sokwhole/sokwhole_17.txt,bfs,Solved,None,None,15395,9374,19,4154,27.3713641166687,r|d|r|l|d|r|l|u|u|u|r|l|d|d|r|d|d|r|l|u|l|u|u|u|r|d|r|r|d|u|l|l|l|d|d|r|u|l|u|r|
+sokwhole/sokwhole_17.txt,IDA*,Solved,Manhattan,Fixed (4),4208,0,1264,11838,84.49996280670166,r|d|r|l|d|r|l|u|u|u|r|d|r|r|d|u|l|l|l|d|d|r|d|r|l|u|u|l|u|r|
+sokwhole/sokwhole_17.txt,IDA*,Solved,Manhattan,Fixed (4),5657,0,1102,11422,80.68158102035522,r|d|r|l|u|u|r|d|r|r|d|u|l|l|l|d|d|r|d|r|l|u|u|d|l|u|u|r|
+sokwhole/sokwhole_17.txt,IDA*,Solved,Manhattan,Dynamic,5377,0,1138,12002,87.55474805831909,r|d|r|l|u|u|r|d|r|r|d|u|l|l|l|d|d|r|d|r|l|u|u|l|u|r|
+sokwhole/sokwhole_18.txt,bfs,Solved,None,None,2896,1728,19,874,6.238991975784302,d|r|r|r|d|u|l|l|d|r|l|u|l|l|d|r|l|u|r|r|r|d|d|u|l|r|u|l|l|l|d|r|r|l|d|r|d|r|
+sokwhole/sokwhole_18.txt,IDA*,Solved,Manhattan,Fixed (1),270,0,100,1448,4.643187999725342,d|r|r|r|d|u|l|l|d|r|d|u|l|u|l|l|d|r|r|l|d|r|d|r|
+sokwhole/sokwhole_18.txt,IDA*,Solved,Manhattan,Fixed (4),442,0,68,869,2.9429240226745605,d|r|r|r|d|u|l|l|d|r|d|u|l|u|l|l|d|r|r|l|d|r|d|r|
+sokwhole/sokwhole_18.txt,IDA*,Solved,Manhattan,Dynamic,242,0,86,954,3.0811171531677246,d|r|r|r|d|u|l|l|d|r|d|u|l|u|l|l|d|r|r|l|d|r|d|r|
+sokwhole/sokwhole_18.txt,IDA*,Solved,Manhattan,Fixed (1),255,0,133,2256,7.888960838317871,d|r|r|r|d|u|l|l|d|r|d|u|l|u|l|l|d|r|r|l|d|r|d|r|
+sokwhole/sokwhole_18.txt,IDA*,Solved,Manhattan,Fixed (4),269,0,56,601,1.899068832397461,d|r|r|r|d|u|l|l|d|r|d|u|l|u|l|l|d|r|r|l|d|r|d|r|
+sokwhole/sokwhole_18.txt,IDA*,Solved,Manhattan,Dynamic,269,0,233,2051,7.362738847732544,d|r|r|r|d|u|l|l|d|r|d|u|l|u|l|l|d|r|r|l|d|r|d|r|
+sokwhole/sokwhole_19.txt,bfs,Solved,None,None,8736,5290,23,2399,22.440665006637573,d|d|l|l|d|d|r|l|d|d|r|l|u|u|r|u|l|d|d|d|r|u|r|r|u|d|l|l|l|u|u|r|d|l|d|r|l|u|r|u|l|u|r|
+sokwhole/sokwhole_19.txt,IDA*,Solved,Manhattan,Fixed (4),3809,0,512,8324,53.92776894569397,d|d|l|l|d|d|r|u|l|d|d|d|r|u|r|r|u|d|l|l|l|u|u|u|r|l|d|r|d|u|l|d|d|r|
+sokwhole/sokwhole_19.txt,IDA*,Solved,Manhattan,Dynamic,3294,0,617,9134,56.231887102127075,d|d|l|l|d|d|r|u|l|d|d|d|r|u|r|r|u|d|l|l|u|l|u|u|r|d|d|u|l|d|d|r|
+sokwhole/sokwhole_19.txt,IDA*,Solved,Manhattan,Fixed (4),3972,0,611,10644,71.10514998435974,d|d|l|l|d|d|r|u|l|d|d|d|r|u|r|r|u|d|l|l|d|l|u|u|u|u|r|d|d|u|l|d|d|r|
+sokwhole/sokwhole_19.txt,IDA*,Solved,Manhattan,Dynamic,3112,0,777,10821,68.25713777542114,d|d|l|l|d|d|r|u|l|d|d|d|r|u|r|r|u|d|l|l|l|u|u|u|r|d|d|l|d|r|
+sokwhole/sokwhole_20.txt,bfs,Solved,None,None,2002,1148,31,650,3.434675931930542,l|u|l|u|u|r|d|r|l|l|u|u|u|r|d|l|d|d|r|r|d|r|u|l|l|l|d|r|l|u|r|u|l|d|r|r|r|d|l|r|u|l|l|l|u|u|u|r|d|d|l|d|r|l|d|r|
+sokwhole/sokwhole_20.txt,IDA*,Solved,Manhattan,Fixed (1),554,0,232,2646,10.273975133895874,l|u|l|u|u|r|d|r|d|r|u|l|l|l|u|u|u|r|d|d|l|d|r|l|d|r|
+sokwhole/sokwhole_20.txt,IDA*,Solved,Manhattan,Fixed (4),598,0,110,1149,4.345675945281982,l|u|l|u|u|r|d|r|d|r|u|l|l|l|u|u|u|r|d|d|l|d|r|l|d|r|
+sokwhole/sokwhole_20.txt,IDA*,Solved,Manhattan,Dynamic,513,0,203,1906,7.193765163421631,l|u|l|u|u|r|d|r|d|r|u|l|l|l|u|u|u|r|d|d|l|d|r|l|d|r|
+sokwhole/sokwhole_20.txt,IDA*,Solved,Manhattan,Fixed (1),550,0,537,4545,18.066712856292725,l|u|l|u|u|r|d|r|d|r|u|l|l|l|u|u|u|r|d|d|l|d|r|l|d|r|
+sokwhole/sokwhole_20.txt,IDA*,Solved,Manhattan,Fixed (4),805,0,83,1785,7.382658958435059,l|u|l|u|u|r|d|r|d|r|u|l|l|l|u|u|u|r|d|d|l|d|d|r|d|u|l|u|r|
+sokwhole/sokwhole_20.txt,IDA*,Solved,Manhattan,Dynamic,532,0,485,3778,15.212027072906494,l|u|l|u|u|r|d|r|d|r|u|l|l|l|u|u|u|r|d|d|l|d|r|l|d|r|
+sokwhole/sokwhole_21.txt,bfs,Solved,None,None,702,384,29,238,1.239638090133667,r|d|r|l|u|u|r|l|d|d|r|u|r|l|l|d|r|d|r|u|r|u|l|r|d|l|l|l|u|r|u|l|d|r|d|r|r|u|l|r|d|l|l|u|
+sokwhole/sokwhole_21.txt,IDA*,Solved,Manhattan,Fixed (1),390,0,76,1391,4.6373350620269775,r|u|r|l|d|d|r|u|r|l|u|d|d|d|r|u|r|u|l|d|l|u|
+sokwhole/sokwhole_21.txt,IDA*,Solved,Manhattan,Fixed (4),479,0,35,1145,4.133373975753784,r|d|r|l|u|u|r|l|d|d|r|u|r|l|u|l|d|r|d|d|r|u|r|u|d|u|l|d|l|u|
+sokwhole/sokwhole_21.txt,IDA*,Solved,Manhattan,Dynamic,460,0,33,675,2.3555219173431396,r|u|r|l|d|d|r|u|u|d|r|l|d|d|r|u|r|u|l|d|l|u|
+sokwhole/sokwhole_21.txt,IDA*,Solved,Manhattan,Fixed (1),516,0,93,2229,7.8241589069366455,r|u|r|l|d|d|r|u|r|l|u|d|d|d|r|u|r|u|l|d|l|u|
+sokwhole/sokwhole_21.txt,IDA*,Solved,Manhattan,Fixed (4),351,0,89,967,3.309903860092163,r|u|r|l|d|d|r|u|u|d|r|l|d|d|r|u|d|u|r|u|l|d|l|u|
+sokwhole/sokwhole_21.txt,IDA*,Solved,Manhattan,Dynamic,292,0,62,707,2.3322207927703857,r|u|r|l|d|d|r|u|u|d|r|l|d|d|r|u|r|u|l|d|l|u|
+sokwhole/sokwhole_22.txt,bfs,Solved,None,None,8143,4886,26,2286,21.898765802383423,d|l|d|l|d|d|r|l|d|r|l|u|u|u|r|d|r|l|l|d|d|r|d|r|r|u|d|l|l|u|l|u|u|r|u|u|r|d|l|l|d|d|d|r|u|l|d|r|d|r|r|u|l|r|d|l|l|u|
+sokwhole/sokwhole_22.txt,IDA*,Solved,Manhattan,Fixed (1),2858,0,550,12415,73.68661093711853,d|l|d|l|d|d|r|l|u|u|r|d|r|l|u|u|r|d|l|d|l|d|d|r|u|d|d|r|r|u|l|d|l|u|
+sokwhole/sokwhole_22.txt,IDA*,Solved,Manhattan,Fixed (4),2707,0,502,7425,44.859503746032715,d|l|d|l|d|d|r|l|u|u|r|d|r|l|l|u|r|u|r|d|l|l|d|d|d|r|u|d|d|r|r|u|d|u|l|d|l|u|
+sokwhole/sokwhole_22.txt,IDA*,Solved,Manhattan,Dynamic,2495,0,747,11513,70.00666809082031,d|l|d|l|d|d|r|l|u|u|r|d|r|l|u|u|r|d|l|l|d|d|d|r|u|d|d|r|r|u|l|d|l|u|
+sokwhole/sokwhole_22.txt,IDA*,Solved,Manhattan,Fixed (4),2841,0,591,9774,62.81074094772339,d|l|d|l|d|d|r|l|u|u|r|d|r|l|l|d|d|r|u|d|d|r|r|u|d|u|l|d|l|u|l|u|u|u|r|u|r|d|
+sokwhole/sokwhole_23.txt,bfs,Solved,None,None,1310,738,17,458,2.4629790782928467,l|l|u|l|u|u|l|l|d|r|l|u|r|r|d|l|l|u|l|l|d|r|r|r|d|u|l|l|d|r|
+sokwhole/sokwhole_23.txt,IDA*,Solved,Manhattan,Fixed (1),485,0,188,2441,10.071488857269287,l|l|u|l|u|u|l|l|d|r|d|u|l|u|l|l|d|r|r|l|d|r|r|l|u|u|r|d|
+sokwhole/sokwhole_23.txt,IDA*,Solved,Manhattan,Fixed (4),485,0,75,930,3.686279773712158,l|l|u|l|u|u|l|l|d|r|d|u|l|u|l|l|d|r|r|l|d|r|r|l|u|u|r|d|
+sokwhole/sokwhole_23.txt,IDA*,Solved,Manhattan,Dynamic,434,0,102,1077,4.433788776397705,l|l|u|l|u|u|l|l|d|r|l|u|r|r|d|l|l|u|l|l|d|r|r|r|d|u|l|l|d|r|
+sokwhole/sokwhole_23.txt,IDA*,Solved,Manhattan,Fixed (1),527,0,527,5783,25.675838232040405,l|l|u|l|u|u|l|l|d|r|d|u|u|l|l|l|d|r|r|l|d|r|r|l|u|u|r|d|
+sokwhole/sokwhole_23.txt,IDA*,Solved,Manhattan,Fixed (4),534,0,82,1319,5.945173025131226,l|l|u|l|u|u|l|l|d|r|d|u|u|l|l|l|d|r|r|l|d|r|r|l|u|u|r|d|
+sokwhole/sokwhole_23.txt,IDA*,Solved,Manhattan,Dynamic,564,0,100,1520,6.534475803375244,l|l|u|l|u|u|l|l|d|r|d|u|u|r|d|u|l|l|l|l|d|r|d|r|l|u|r|r|
+sokwhole/sokwhole_24.txt,IDA*,Solved,Manhattan,Dynamic,5943,0,1180,12220,93.3297188282013,r|u|r|r|d|d|r|d|r|d|l|r|u|r|u|l|u|l|d|u|u|l|l|l|d|d|r|u|l|u|r|
+sokwhole/sokwhole_24.txt,IDA*,Solved,Manhattan,Fixed (4),7468,0,1100,13119,110.54959297180176,r|u|r|r|d|d|r|d|r|d|l|r|u|r|u|l|u|l|d|u|u|l|l|l|d|d|r|u|d|l|u|u|r|
+sokwhole/sokwhole_26.txt,bfs,Solved,None,None,7810,4677,24,2245,19.692613124847412,u|l|l|r|u|d|r|r|u|l|u|l|u|l|l|d|r|l|l|d|d|r|r|r|l|u|r|l|d|l|l|u|r|l|u|r|u|r|r|d|l|r|u|l|l|d|
+sokwhole/sokwhole_26.txt,IDA*,Solved,Manhattan,Fixed (4),1500,0,406,6784,36.94342517852783,u|l|l|r|u|d|r|r|u|l|u|l|u|l|l|d|r|l|l|d|d|r|r|r|l|u|r|l|d|l|l|u|u|r|u|r|r|d|u|l|d|
+sokwhole/sokwhole_26.txt,IDA*,Solved,Manhattan,Fixed (4),1399,0,431,7614,42.196382999420166,u|l|l|r|u|d|r|r|u|l|u|l|u|l|l|d|r|l|l|d|d|r|r|r|l|u|r|l|d|l|l|u|u|r|u|r|d|u|r|d|
+sokwhole/sokwhole_27.txt,bfs,Solved,None,None,12478,7286,45,3996,50.65377688407898,d|d|d|r|r|u|r|l|d|l|l|u|u|u|r|r|r|d|r|d|r|l|d|l|r|u|r|d|r|r|d|d|l|r|u|u|l|l|l|l|l|r|r|r|r|r|d|d|l|u|r|u|u|l|d|l|l|l|l|u|r|u|r|d|r|l|l|u|u|l|l|l|d|d|d|r|r|l|l|u|u|u|r|r|r|d|r|d|r|d|r|r|d|d|l|u|r|u|l|r|u|l|
