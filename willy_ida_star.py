@@ -75,7 +75,7 @@ def IDAstar(b):
             nodes = nodes + 1
             if currentState.is_win():
                 end = time()
-                print_results(currentState, 0, 0, 0, 0, end - start)
+                print_results(currentState, nodes, 0, 0, 0, end - start)
                 return currentState # SOLUTION FOUND!!!
 
             if nodes % 1000000 == 0:
