@@ -1,4 +1,0 @@
-Puzzle Name,Search Method,Is Solved,Heuristic,Iteration Step,Nodes Generated,Nodes Repeated,Fringe Nodes,Explored Nodes,Duration,Path
-microban/microban_1.txt,bfs,Solved,None,None,312,168,16,106,0.5010490417480469,d|l|u|r|r|r|d|l|r|u|l|l|l|d|d|r|u|l|u|r|u|u|l|d|r|d|d|r|r|u|l|r|d|l|l|u|u|
-microban/microban_1.txt,IDA*,Solved,Manhattan,Fixed (4),124,0,24,886,2.518061876296997,d|l|u|r|r|r|d|l|r|u|l|l|l|d|d|r|u|l|u|r|u|u|l|d|r|d|d|r|r|u|l|r|d|l|l|u|u|
-microban/microban_1.txt,IDA*,Solved,Manhattan,Fixed (4),137,0,26,1252,3.468971014022827,d|l|u|r|r|r|d|l|r|u|l|l|l|d|d|r|u|l|u|r|u|u|l|d|r|d|d|r|r|u|l|r|d|l|l|u|u|

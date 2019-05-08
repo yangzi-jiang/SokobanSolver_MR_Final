@@ -55,78 +55,78 @@ def generate_results():
     fNames = ["microbans", "miscs", "sokwholes"]
     folders = [microbans, miscs, sokwholes]
     
-    for folder in folders:
-        num_puzzles = 30
+    # for folder in folders:
+    num_puzzles = 30
 
-        # folderName = folder.replace("levels/", "")
-        # folderName = folderName.replace("/*.txt", "-output.csv")
-        folderName = fNames[folders.index(folder)]
-        folderName = folderName + "-output.csv"
-        folderName = "results/" + folderName
-        with open(folderName, 'w') as f:
-            output = csv.writer(f)
-            output.writerow(["Puzzle Name", "Search Method", "Is Solved", "Heuristic", "Iteration Step", "Nodes Generated", "Nodes Repeated", "Fringe Nodes", "Explored Nodes", "Duration", "Path"])
+    # folderName = folder.replace("levels/", "")
+    # folderName = folderName.replace("/*.txt", "-output.csv")
+    folderName = fNames[folders.index(sokwholes)]
+    folderName = folderName + "-output.csv"
+    folderName = "results/" + folderName
+    with open(folderName, 'w') as f:
+        output = csv.writer(f)
+        output.writerow(["Puzzle Name", "Search Method", "Is Solved", "Heuristic", "Iteration Step", "Nodes Generated", "Nodes Repeated", "Fringe Nodes", "Explored Nodes", "Duration", "Path"])
 
-            for puzzle in folder:
-                if num_puzzles == 0:
-                    break
-                else:
-                    puzzleName = puzzle.replace("levels/", "")
-                    try:
-                        soko_game = Sokoban()
-                        bfs_output = run_search(soko_game, puzzle, 1) # BFS
-                        bfs_list = [puzzleName, "bfs", bfs_output[6], "None", "None", bfs_output[1], bfs_output[2], bfs_output[3], bfs_output[4], bfs_output[5], bfs_output[0].getDirections()]
-                        output.writerow(bfs_list)
-                    except:
-                        pass
+        for puzzle in sokwholes:
+            if num_puzzles == 0:
+                break
+            else:
+                puzzleName = puzzle.replace("levels/", "")
+                try:
+                    soko_game = Sokoban()
+                    bfs_output = run_search(soko_game, puzzle, 1) # BFS
+                    bfs_list = [puzzleName, "bfs", bfs_output[6], "None", "None", bfs_output[1], bfs_output[2], bfs_output[3], bfs_output[4], bfs_output[5], bfs_output[0].getDirections()]
+                    output.writerow(bfs_list)
+                except:
+                    pass
+                
+                try:
+                    ida_1_output = run_search(soko_game, puzzle, 2, 'm', 1) # IDA*, mahattan, path_limit_incrementer = 1
+                    ida_1_list = [puzzleName, "IDA*", ida_1_output[6], "Manhattan", "Fixed (1)", ida_1_output[1], ida_1_output[2], ida_1_output[3], ida_1_output[4], ida_1_output[5], ida_1_output[0].getDirections()]
+                    output.writerow(ida_1_list)
+                except:
+                    pass
+
+                try:
+                    ida_2_output = run_search(soko_game, puzzle, 2, 'm', 4) # IDA*, mahattan
+                    ida_2_list = [puzzleName, "IDA*", ida_2_output[6], "Manhattan", "Fixed (4)", ida_2_output[1], ida_2_output[2], ida_2_output[3], ida_2_output[4], ida_2_output[5], ida_2_output[0].getDirections()]
+                    output.writerow(ida_2_list)
+                except:
+                    pass
+
+                try:
+                    ida_3_output = run_search(soko_game, puzzle, 2, 'm') # IDA*, mahattan, path_limit_incrementer = dynamic
+                    ida_3_list = [puzzleName, "IDA*", ida_3_output[6], "Manhattan", "Dynamic", ida_3_output[1], ida_3_output[2], ida_3_output[3], ida_3_output[4], ida_3_output[5], ida_3_output[0].getDirections()]
+                    output.writerow(ida_3_list)
+                except:
+                    pass
+
+                try:
+                    ida_4_output = run_search(soko_game, puzzle, 2, 'e', 1) # IDA*, mahattan, path_limit_incrementer = 1
+                    ida_4_list = [puzzleName, "IDA*", ida_4_output[6], "Manhattan", "Fixed (1)", ida_4_output[1], ida_4_output[2], ida_4_output[3], ida_4_output[4], ida_4_output[5], ida_4_output[0].getDirections()]
+                    output.writerow(ida_4_list)
+                except:
+                    pass
+                
+                try:
+                    ida_5_output = run_search(soko_game, puzzle, 2, 'e', 4) # IDA* with euclidean
+                    ida_5_list = [puzzleName, "IDA*", ida_5_output[6], "Manhattan", "Fixed (4)", ida_5_output[1], ida_5_output[2], ida_5_output[3], ida_5_output[4], ida_5_output[5], ida_5_output[0].getDirections()]
+                    output.writerow(ida_5_list)
+                except:
+                    pass
                     
-                    try:
-                        ida_1_output = run_search(soko_game, puzzle, 2, 'm', 1) # IDA*, mahattan, path_limit_incrementer = 1
-                        ida_1_list = [puzzleName, "IDA*", ida_1_output[6], "Manhattan", "Fixed (1)", ida_1_output[1], ida_1_output[2], ida_1_output[3], ida_1_output[4], ida_1_output[5], ida_1_output[0].getDirections()]
-                        output.writerow(ida_1_list)
-                    except:
-                        pass
+                try:
+                    ida_6_output = run_search(soko_game, puzzle, 2, 'e') # IDA* with euclidean
+                    ida_6_list = [puzzleName, "IDA*", ida_6_output[6], "Manhattan", "Dynamic", ida_6_output[1], ida_6_output[2], ida_6_output[3], ida_6_output[4], ida_6_output[5], ida_6_output[0].getDirections()]
+                    output.writerow(ida_6_list)
 
-                    try:
-                        ida_2_output = run_search(soko_game, puzzle, 2, 'm', 4) # IDA*, mahattan
-                        ida_2_list = [puzzleName, "IDA*", ida_2_output[6], "Manhattan", "Fixed (4)", ida_2_output[1], ida_2_output[2], ida_2_output[3], ida_2_output[4], ida_2_output[5], ida_2_output[0].getDirections()]
-                        output.writerow(ida_2_list)
-                    except:
-                        pass
+                    # run_search(soko_game, puzzle, 2, 'max', 1) # IDA*, mahattan, path_limit_incrementer
+                    # run_search(soko_game, puzzle, 2, 'max', 4) # IDA* with euclidean
+                    # run_search(soko_game, puzzle, 2, 'max') # IDA* with max between m & e
+                except:
+                    pass
 
-                    try:
-                        ida_3_output = run_search(soko_game, puzzle, 2, 'm') # IDA*, mahattan, path_limit_incrementer = dynamic
-                        ida_3_list = [puzzleName, "IDA*", ida_3_output[6], "Manhattan", "Dynamic", ida_3_output[1], ida_3_output[2], ida_3_output[3], ida_3_output[4], ida_3_output[5], ida_3_output[0].getDirections()]
-                        output.writerow(ida_3_list)
-                    except:
-                        pass
-
-                    try:
-                        ida_4_output = run_search(soko_game, puzzle, 2, 'e', 1) # IDA*, mahattan, path_limit_incrementer = 1
-                        ida_4_list = [puzzleName, "IDA*", ida_4_output[6], "Manhattan", "Fixed (1)", ida_4_output[1], ida_4_output[2], ida_4_output[3], ida_4_output[4], ida_4_output[5], ida_4_output[0].getDirections()]
-                        output.writerow(ida_4_list)
-                    except:
-                        pass
-                    
-                    try:
-                        ida_5_output = run_search(soko_game, puzzle, 2, 'e', 4) # IDA* with euclidean
-                        ida_5_list = [puzzleName, "IDA*", ida_5_output[6], "Manhattan", "Fixed (4)", ida_5_output[1], ida_5_output[2], ida_5_output[3], ida_5_output[4], ida_5_output[5], ida_5_output[0].getDirections()]
-                        output.writerow(ida_5_list)
-                    except:
-                        pass
-                        
-                    try:
-                        ida_6_output = run_search(soko_game, puzzle, 2, 'e') # IDA* with euclidean
-                        ida_6_list = [puzzleName, "IDA*", ida_6_output[6], "Manhattan", "Dynamic", ida_6_output[1], ida_6_output[2], ida_6_output[3], ida_6_output[4], ida_6_output[5], ida_6_output[0].getDirections()]
-                        output.writerow(ida_6_list)
-
-                        # run_search(soko_game, puzzle, 2, 'max', 1) # IDA*, mahattan, path_limit_incrementer
-                        # run_search(soko_game, puzzle, 2, 'max', 4) # IDA* with euclidean
-                        # run_search(soko_game, puzzle, 2, 'max') # IDA* with max between m & e
-                    except:
-                        pass
-
-                    num_puzzles -= 1
+                num_puzzles -= 1
 
 def main():
     soko_game = Sokoban()
