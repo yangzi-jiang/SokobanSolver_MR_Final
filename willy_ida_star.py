@@ -45,6 +45,14 @@ def isClosed(closedSet, x):
     return False
 
 def IDAstar(b):
+    # Bookkeeping
+    start = time()
+    nodes_generated = 0
+    nodes_repeated = 0
+    
+    fringe_nodes = 0
+    nodes_explored = 0
+
     MAXNODES = 20000000
     openSet = []
     closedSet = []
@@ -66,7 +74,8 @@ def IDAstar(b):
 
             nodes = nodes + 1
             if currentState.is_win():
-                print_results(currentState,0,0,0,0,0)
+                end = time()
+                print_results(currentState, 0, 0, 0, 0, end - start)
                 return currentState # SOLUTION FOUND!!!
 
             if nodes % 1000000 == 0:
