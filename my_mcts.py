@@ -1,6 +1,7 @@
 from __future__ import division
 from hash_table import HashTable
-
+from copy import deepcopy
+from heuristics import Heuristic
 import time
 import math
 import random
@@ -15,6 +16,31 @@ def randomPolicy(state):
         state = state.takeAction(action)
     return state.getReward()
 
+def heuristicPolicy(state):
+    while not state.isTerminal():
+        try:
+            actList = state.getPossibleActions()
+            cpyList = []
+            for act in actList:
+                cpy = deepcopy(state)
+                cpy.move(act)
+                cpyList.append(cpy)
+
+            hVal= math.inf
+            h = Heuristic()
+            ind = -1
+
+            for i in range(len(cpyList)):
+                thingVal = h.get_heuristics(cpyList[i])
+                if thingVal < hVal:
+                    hVal = thingVal
+                    ind = i
+            action = actList[ind]
+            # action = random.choice(state.getPossibleActions())
+        except IndexError:
+            raise Exception("Non-terminal state has no possible actions: " + str(state))
+        state = state.takeAction(action)
+    return state.getReward()
 
 class treeNode():
     def __init__(self, state, parent):
@@ -29,7 +55,7 @@ class treeNode():
 
 class mcts():
     def __init__(self, timeLimit=None, iterationLimit=None, explorationConstant=1 / math.sqrt(2),
-                 rolloutPolicy=randomPolicy):
+                 rolloutPolicy=heuristicPolicy):
         if timeLimit != None:
             if iterationLimit != None:
                 raise ValueError("Cannot have both a time limit and an iteration limit")

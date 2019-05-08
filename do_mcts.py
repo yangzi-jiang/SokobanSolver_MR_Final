@@ -29,7 +29,7 @@ def print_results(board, gen, rep, fri, expl, dur):
 def do_mcts(board):
     # initialState = State()
     # start = time()
-    test = mcts(timeLimit=50)
+    test = mcts(timeLimit=100)
     bestAction = test.search(board)
     # print(bestAction)
     # end = time()
@@ -43,9 +43,9 @@ def run(board):
     cpy = deepcopy(board)
     curr_time = start
 
-    time_out = 120
+    time_out = 10
 
-    while (not cpy.is_win() or curr_time - start < time_out):
+    while (not cpy.is_win() and curr_time - start < time_out):
         print("MCTS iteration")
         action = do_mcts(cpy)
         cpy.move(action)
