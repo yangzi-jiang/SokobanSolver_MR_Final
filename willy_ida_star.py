@@ -57,12 +57,13 @@ def IDAstar(b):
     openSet = []
     closedSet = []
     visitSet = []
-    pathLimit = h(b) - 1
+    pathLimit = h(b)
     success = False
     it = 0
+    b.f_cost = h(b)
 
     while True:
-        pathLimit = pathLimit + 1
+        pathLimit = pathLimit + h(b)
         # print ("current pathLimit = ", pathLimit)
         b.g_cost = 0
         openSet.insert(0, b)

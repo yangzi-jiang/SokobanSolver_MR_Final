@@ -44,6 +44,9 @@ class Sokoban:
                         new_board.add_box(x, y)
                         new_board.add_goal(x, y)
                         new_board.add_space(x, y)
+                    elif char == '!':
+                        new_board.add_goal(x, y)
+                        new_board.set_player(x, y)
                     elif char == ' ':
                         new_board.add_space(x, y)
                     x += 1
