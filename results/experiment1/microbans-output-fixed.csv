@@ -1,0 +1,134 @@
+Puzzle Name,Search Method,Is Solved,Heuristic,Iteration Step,Nodes Generated,Nodes Repeated,Fringe Nodes,Explored Nodes,Duration,Path
+microban/microban_01.txt,bfs,Solved,None,None,312,168,16,106,0.417694092,d|l|u|r|r|r|d|l|r|u|l|l|l|d|d|r|u|l|u|r|u|u|l|d|r|d|d|r|r|u|l|r|d|l|l|u|u|
+microban/microban_01.txt,IDA*,Solved,Manhattan,Fixed (1),237,0,11,2181,5.74631691,d|l|u|r|r|r|d|l|u|l|l|d|d|r|u|l|u|r|u|u|l|d|r|d|d|r|r|u|l|d|l|u|u|
+microban/microban_01.txt,IDA*,Solved,Manhattan,Fixed (4),124,0,24,886,2.344604015,d|l|u|r|r|r|d|l|r|u|l|l|l|d|d|r|u|l|u|r|u|u|l|d|r|d|d|r|r|u|l|r|d|l|l|u|u|
+microban/microban_01.txt,IDA*,Solved,Manhattan,Dynamic,125,0,22,1950,5.438688993,d|l|u|r|r|r|d|l|r|u|l|l|l|d|d|r|u|l|u|r|u|u|l|d|r|d|d|r|r|u|l|d|l|u|u|
+microban/microban_01.txt,IDA*,Solved,Euclidean,Fixed (1),239,0,10,3872,11.50433898,d|l|u|r|r|r|d|l|u|l|l|d|d|r|u|l|u|r|u|u|l|d|r|d|d|r|r|u|l|d|l|u|u|
+microban/microban_01.txt,IDA*,Solved,Euclidean,Fixed (4),137,0,26,1252,3.485858202,d|l|u|r|r|r|d|l|r|u|l|l|l|d|d|r|u|l|u|r|u|u|l|d|r|d|d|r|r|u|l|r|d|l|l|u|u|
+microban/microban_01.txt,IDA*,Solved,Euclidean,Dynamic,239,0,10,3454,9.945414066,d|l|u|r|r|r|d|l|u|l|l|d|d|r|u|l|u|r|u|u|l|d|r|d|d|r|r|u|l|d|l|u|u|
+microban/microban_02.txt,bfs,Solved,None,None,99,45,12,40,0.190611124,r|d|d|l|r|d|l|l|l|u|u|u|u|r|r|r|d|l|d|r|d|d|l|l|l|u|u|r|
+microban/microban_02.txt,IDA*,Solved,Manhattan,Fixed (1),117,0,10,352,1.235910177,r|d|d|l|r|u|u|l|d|u|u|l|l|d|d|r|
+microban/microban_02.txt,IDA*,Solved,Manhattan,Fixed (4),117,0,10,225,0.671220064,r|d|d|l|r|u|u|l|d|u|u|l|l|d|d|r|
+microban/microban_02.txt,IDA*,Solved,Manhattan,Dynamic,117,0,10,347,1.121590137,r|d|d|l|r|u|u|l|d|u|u|l|l|d|d|r|
+microban/microban_02.txt,IDA*,Solved,Euclidean,Fixed (1),88,0,22,603,1.770990849,r|d|d|l|r|u|u|l|d|u|u|l|l|d|d|r|
+microban/microban_02.txt,IDA*,Solved,Euclidean,Fixed (4),100,0,10,192,0.569437027,r|d|d|l|r|u|u|l|d|u|u|l|l|d|d|r|
+microban/microban_02.txt,IDA*,Solved,Euclidean,Dynamic,144,0,12,647,2.177782059,r|d|d|l|r|u|u|l|d|u|u|l|l|d|d|r|
+microban/microban_03.txt,bfs,Solved,None,None,1769,1001,19,605,3.542251825,r|u|u|l|l|l|l|r|r|r|r|d|d|l|u|r|u|l|l|l|u|l|d|r|d|d|l|l|l|u|u|r|r|d|r|d|l|r|u|l|u|u|r|d|d|
+microban/microban_03.txt,IDA*,Solved,Manhattan,Fixed (1),1121,0,91,8039,34.76386523,r|u|u|l|l|l|u|l|d|r|r|r|r|d|d|l|u|r|u|l|l|l|d|d|l|l|l|u|u|r|r|d|r|d|l|u|u|u|r|d|d|
+microban/microban_03.txt,IDA*,Solved,Manhattan,Fixed (4),436,0,114,3405,14.84163404,r|u|u|l|l|l|l|r|r|r|r|d|d|l|u|r|u|l|l|l|u|l|d|r|d|d|l|l|l|u|u|r|r|d|r|d|l|r|u|l|u|u|r|d|d|
+microban/microban_03.txt,IDA*,Solved,Manhattan,Dynamic,1220,0,19,5388,26.26016521,r|u|u|l|l|l|l|r|r|r|r|d|d|l|u|r|u|l|l|l|u|l|d|r|d|d|l|l|l|u|u|r|r|d|r|d|l|u|u|u|r|d|d|
+microban/microban_03.txt,IDA*,Solved,Euclidean,Fixed (4),451,0,117,4184,17.17221498,r|u|u|l|l|l|l|r|r|r|r|d|d|l|u|r|u|l|l|l|u|l|d|r|d|d|l|l|l|u|u|r|r|d|r|d|l|r|u|l|u|u|r|d|d|
+microban/microban_04.txt,bfs,Solved,None,None,3418,2014,118,901,23.37967587,d|l|l|l|l|l|u|r|u|r|r|r|d|r|d|l|r|u|l|u|l|l|l|l|d|r|d|r|r|l|l|l|u|r|u|r|r|d|r|r|d|d|l|u|r|u|u|l|l|l|l|l|d|r|r|l|l|d|r|r|r|l|l|l|u|r|r|u|r|r|r|d|d|l|r|u|u|l|d|r|d|d|l|u|l|r|r|u|u|l|d|r|u|l|l|l|l|l|d|r|r|r|l|l|l|d|r|r|l|l|u|r|r|r|u|r|r|d|l|l|l|r|r|r|d|d|l|u|r|u|l|r|d|l|l|r|r|u|l|l|r|r|d|l|l|l|r|r|r|u|l|l|u|l|l|l|d|d|r|r|r|l|l|l|u|u|r|r|r|r|r|d|d|d|l|u|r|u|l|
+microban/microban_04.txt,IDA*,Solved,Manhattan,Fixed (1),718,0,523,4294,19.28619909,u|l|l|d|l|d|r|u|u|r|r|d|l|l|r|r|d|d|l|u|r|u|l|
+microban/microban_04.txt,IDA*,Solved,Manhattan,Fixed (4),1029,0,264,3095,14.67770076,u|l|l|d|l|d|r|u|l|u|r|r|r|d|l|l|u|r|r|d|d|d|l|u|d|r|u|u|l|
+microban/microban_04.txt,IDA*,Solved,Manhattan,Dynamic,718,0,523,4290,19.97073102,u|l|l|d|l|d|r|u|u|r|r|d|l|l|r|r|d|d|l|u|r|u|l|
+microban/microban_04.txt,IDA*,Solved,Euclidean,Fixed (4),702,0,358,2342,10.71297526,u|l|l|d|l|d|r|u|u|r|r|d|l|l|u|r|r|d|d|d|l|u|r|u|l|
+microban/microban_06.txt,bfs,Solved,None,None,3130,1710,196,999,15.47147417,d|l|l|l|l|l|u|l|u|l|l|l|d|d|r|l|u|u|r|d|r|r|r|r|r|l|l|l|l|l|l|d|d|r|r|u|d|l|l|u|r|l|u|r|r|r|r|r|l|l|l|l|l|d|r|d|r|u|l|l|u|r|u|r|r|d|r|r|d|r|r|r|r|u|u|l|l|d|l|d|r|l|l|l|u|r|l|l|l|r|r|r|d|r|r|u|l|r|d|l|l|l|u|l|l|d|l|l|u|r|l|u|r|r|r|d|l|u|l|d|r|r|r|r|l|l|l|l|l|d|r|l|d|r|r|u|l|l|u|r|u|r|d|r|r|r|d|r|r|u|l|r|u|r|r|d|d|l|r|u|u|l|l|d|l|l|r|r|u|r|r|d|d|l|l|r|r|u|u|l|l|d|l|l|l|r|r|r|d|l|r|r|r|u|u|l|l|d|l|l|l|l|r|r|r|r|d|l|l|r|r|r|r|u|u|l|l|d|l|l|l|l|l|r|u|l|l|l|d|r|r|r|r|r|r|l|l|l|l|l|l|d|r|d|r|u|l|l|u|r|r|r|r|r|d|r|r|r|r|u|u|l|l|d|l|r|u|r|r|d|d|l|l|r|r|u|u|l|l|d|l|l|r|r|d|l|r|r|r|u|u|l|l|d|l|l|l|l|l|r|u|l|l|l|d|r|r|r|r|r|r|d|r|r|r|u|u|l|l|d|l|d|r|l|u|r|u|r|r|d|d|l|l|
+microban/microban_08.txt,bfs,Solved,None,None,2125,1148,55,823,13.30516672,l|l|d|l|u|r|r|r|d|l|r|u|l|l|l|d|r|d|d|d|d|d|l|l|l|d|d|r|r|d|r|r|u|u|l|r|d|d|l|l|u|l|l|u|u|r|r|r|u|u|u|u|u|l|u|r|r|r|d|l|r|u|l|l|d|d|d|d|d|d|l|l|l|d|d|r|r|u|d|l|l|u|u|r|r|l|l|d|d|r|r|d|r|r|u|u|l|r|d|d|l|l|u|l|l|u|u|r|r|d|r|r|d|d|l|l|u|u|r|u|l|r|u|d|l|d|r|r|d|d|l|l|u|l|l|u|u|r|l|d|d|r|r|d|r|r|u|u|l|u|u|u|d|d|l|r|u|u|u|d|d|d|l|d|r|r|d|d|l|l|u|l|l|u|u|r|l|d|d|r|r|d|r|r|u|u|l|u|u|u|u|u|d|d|d|d|l|r|u|u|u|u|u|l|u|r|l|d|r|d|d|d|d|d|l|d|r|r|d|d|l|l|u|l|l|u|u|r|r|l|l|d|d|r|r|d|r|r|u|u|l|u|u|u|u|u|u|
+microban/microban_09.txt,bfs,Solved,None,None,257,132,15,98,0.328971863,u|r|r|d|u|l|l|d|r|d|r|l|u|l|u|r|r|d|r|d|d|l|u|r|u|l|r|d|l|l|u|r|u|l|
+microban/microban_09.txt,IDA*,Solved,Manhattan,Fixed (1),178,0,44,781,2.076131105,u|r|r|d|u|l|l|d|r|d|r|l|u|u|r|d|r|d|d|l|u|r|u|l|d|l|u|r|u|l|
+microban/microban_09.txt,IDA*,Solved,Manhattan,Fixed (4),104,0,40,411,1.095122099,u|r|r|d|u|l|l|d|r|d|r|l|u|l|u|r|r|d|r|d|d|l|u|r|u|l|r|d|l|l|u|r|u|l|
+microban/microban_09.txt,IDA*,Solved,Manhattan,Dynamic,253,0,6,812,2.439803839,u|r|r|d|u|l|l|d|r|d|r|l|u|l|u|r|r|d|r|d|d|l|u|r|u|l|d|l|u|r|u|l|
+microban/microban_09.txt,IDA*,Solved,Euclidean,Fixed (1),201,0,82,1619,4.56979084,u|r|r|d|u|l|l|d|r|d|r|l|u|u|r|d|r|d|d|l|u|r|u|l|d|l|u|r|u|l|
+microban/microban_09.txt,IDA*,Solved,Euclidean,Fixed (4),104,0,40,472,1.289059639,u|r|r|d|u|l|l|d|r|d|r|l|u|l|u|r|r|d|r|d|d|l|u|r|u|l|r|d|l|l|u|r|u|l|
+microban/microban_09.txt,IDA*,Solved,Euclidean,Dynamic,262,0,53,1330,3.823043108,u|r|r|d|u|l|l|d|r|d|r|l|u|u|r|d|r|d|d|l|u|r|u|l|d|l|u|r|u|l|
+microban/microban_10.txt,bfs,Solved,None,None,4976,2552,70,2066,19.18418908,r|d|d|r|r|u|u|l|l|r|r|d|d|r|r|u|u|l|r|u|u|u|r|r|d|d|d|l|r|u|u|u|l|l|d|d|d|l|l|d|d|r|r|u|d|l|l|l|l|u|u|r|r|l|l|d|d|r|r|r|r|u|u|l|r|d|d|l|l|l|l|u|u|r|r|l|l|d|d|l|l|u|u|r|r|l|l|d|d|r|r|r|r|r|r|u|u|u|d|d|d|l|l|u|u|l|r|d|d|r|r|u|u|r|r|u|u|u|l|l|d|u|r|r|d|d|d|l|l|u|u|d|d|d|d|l|l|l|l|l|l|u|u|r|r|l|l|d|d|r|r|r|r|u|u|r|l|l|r|d|d|r|r|u|u|l|l|l|l|r|r|r|r|d|d|l|l|l|l|l|l|u|u|r|r|r|r|l|l|l|l|d|d|r|r|r|r|r|r|u|u|l|r|u|d|l|l|r|r|d|d|l|l|l|l|l|l|u|u|r|r|r|r|r|l|l|l|l|l|d|d|r|r|r|r|r|r|u|u|
+microban/microban_11.txt,bfs,Solved,None,None,2119,1140,124,713,13.77590489,u|l|l|l|d|d|d|l|l|d|r|r|r|r|r|r|u|l|r|d|l|l|l|l|l|l|u|r|r|u|u|u|r|r|r|d|d|r|d|d|l|u|u|r|d|l|d|l|l|l|l|l|u|r|r|u|u|u|r|r|r|d|d|l|d|u|r|r|d|l|r|d|l|l|r|r|u|l|u|u|u|l|l|l|d|d|d|l|l|d|r|r|r|r|l|l|l|l|u|r|r|u|u|u|r|r|r|d|d|r|d|d|l|l|l|l|r|r|r|r|u|l|u|l|d|r|r|d|l|l|r|r|u|l|l|u|r|u|u|l|l|l|d|d|d|l|l|d|d|r|u|r|r|r|l|l|l|l|u|r|l|d|r|r|r|r|u|r|r|d|l|l|l|l|r|r|r|r|u|l|l|u|r|u|u|l|l|l|d|d|d|l|l|d|d|r|u|r|r|r|u|r|r|d|l|r|u|l|l|u|r|u|u|l|l|l|d|d|d|d|l|l|u|r|l|d|r|r|u|l|l|d|r|r|r|r|l|l|l|l|u|r|r|u|d|l|l|d|r|r|r|r|u|r|r|d|l|r|u|l|l|u|r|u|u|l|l|l|d|u|r|r|r|d|d|r|d|l|d|l|l|l|u|l|l|d|d|r|u|r|r|r|r|r|u|l|l|u|r|u|u|l|l|l|d|d|
+microban/microban_12.txt,bfs,Solved,None,None,501,269,21,185,1.286080122,u|u|l|u|l|l|d|r|d|r|l|u|l|u|r|r|d|r|d|d|r|r|r|d|d|l|l|l|l|u|r|l|d|r|r|r|r|u|u|l|l|l|u|u|l|l|d|r|l|u|r|r|d|d|r|r|r|d|d|l|l|u|d|l|l|u|r|
+microban/microban_12.txt,IDA*,Solved,Manhattan,Fixed (1),305,0,100,3191,16.144521,u|u|l|u|l|l|d|r|d|r|l|u|u|r|d|r|d|d|r|d|d|l|l|u|r|u|u|u|l|l|d|r|u|r|d|d|r|r|r|d|d|l|l|u|d|l|l|u|r|
+microban/microban_12.txt,IDA*,Solved,Manhattan,Fixed (4),359,0,35,1612,8.323490143,u|u|l|u|l|l|d|r|d|r|l|u|l|u|r|r|d|r|d|d|r|r|r|d|d|l|l|l|l|u|r|u|u|u|l|l|d|r|u|u|l|r|d|r|d|d|r|r|r|d|d|l|l|u|d|l|l|u|r|
+microban/microban_12.txt,IDA*,Solved,Manhattan,Dynamic,402,0,44,2293,12.31402802,u|u|l|u|l|l|d|r|d|r|l|u|l|u|r|r|d|r|d|d|r|r|r|d|d|l|l|l|l|u|r|u|u|u|l|l|d|r|u|r|d|d|r|r|r|d|d|l|l|u|d|l|l|u|r|
+microban/microban_12.txt,IDA*,Solved,Euclidean,Fixed (1),1062,0,135,9745,57.78320694,u|u|l|u|l|l|d|r|d|r|l|u|u|r|d|r|d|d|r|d|d|l|l|u|r|u|u|u|l|l|d|r|u|r|d|d|r|r|r|d|d|l|l|u|d|l|l|u|r|
+microban/microban_12.txt,IDA*,Solved,Euclidean,Fixed (4),335,0,44,1702,8.565490007,u|u|l|u|l|l|d|r|d|r|l|u|l|u|r|r|d|r|d|d|r|d|d|l|l|u|r|u|u|u|l|l|d|r|u|r|d|d|r|r|r|d|d|l|l|u|d|l|l|u|r|
+microban/microban_12.txt,IDA*,Solved,Euclidean,Dynamic,409,0,249,6403,35.51043296,u|u|l|u|l|l|d|r|d|r|l|u|l|u|r|r|d|r|d|d|r|d|d|l|l|u|r|u|u|u|l|l|d|r|u|r|d|d|r|r|r|d|d|l|l|u|d|l|l|u|r|
+microban/microban_13.txt,bfs,Solved,None,None,8245,4845,242,2351,45.30688286,r|d|l|d|d|r|d|r|r|u|l|r|d|l|l|d|l|u|u|r|l|u|d|r|d|r|r|u|l|r|d|l|l|l|u|r|u|l|d|r|d|r|r|u|l|r|d|l|l|l|u|u|r|d|r|r|d|l|l|r|r|u|l|l|l|u|u|l|u|u|r|d|r|d|d|l|d|r|l|u|r|u|u|l|l|d|r|d|r|d|d|r|r|u|l|r|d|l|l|d|l|u|u|r|l|u|u|l|u|u|r|d|r|d|d|l|u|r|d|l|d|d|r|u|l|d|r|r|r|u|l|r|d|l|l|l|u|r|u|l|d|r|d|r|r|u|l|r|d|l|l|l|u|u|r|d|r|r|d|l|l|d|l|u|r|r|r|u|l|l|u|l|u|l|u|u|r|d|r|d|d|l|d|r|d|r|r|u|l|r|d|l|l|d|l|u|u|r|u|u|u|l|l|d|r|l|u|r|r|d|d|d|l|u|u|r|u|l|r|d|l|l|u|r|r|d|l|d|r|d|l|d|d|r|u|u|l|d|r|r|r|u|l|r|d|l|l|l|u|r|u|l|d|r|d|r|r|u|l|r|d|l|l|l|u|u|r|d|r|r|d|l|l|r|r|u|l|l|l|u|u|l|u|r|r|d|l|d|d|r|r|r|d|l|l|d|l|u|r|r|r|u|l|l|u|l|u|l|u|r|r|d|d|l|d|r|d|r|r|u|l|r|d|l|l|d|l|u|u|r|l|d|r|r|r|u|l|r|d|l|l|u|r|r|d|l|l|l|u|u|u|r|d|l|d|r|l|d|r|r|r|u|l|l|r|r|d|l|l|l|u|r|u|u|l|d|r|u|u|l|r|d|l|d|r|d|r|r|d|l|l|l|u|r|u|u|l|d|d|r|r|r|d|l|l|d|l|u|u|u|r|u|l|
+microban/microban_14.txt,bfs,Solved,None,None,356,174,15,155,0.701751947,u|u|l|l|l|l|d|d|r|d|r|u|l|l|u|u|r|r|r|r|d|d|l|l|r|r|u|u|l|l|d|u|l|l|d|d|d|r|r|u|l|r|r|r|u|u|l|l|d|u|r|r|d|d|l|l|d|l|l|u|r|r|u|u|l|l|d|
+microban/microban_14.txt,IDA*,Solved,Manhattan,Fixed (1),118,0,39,1620,5.134985924,u|u|l|l|l|l|d|d|r|d|r|u|l|l|u|u|r|r|r|r|d|d|l|l|l|r|r|r|u|u|l|l|d|u|r|r|d|d|l|l|d|l|l|u|r|r|u|u|l|l|d|
+microban/microban_14.txt,IDA*,Solved,Manhattan,Fixed (4),121,0,27,682,2.183146954,u|u|l|l|l|l|d|d|r|d|r|u|l|l|u|u|r|r|r|r|d|d|l|l|l|r|r|r|u|u|l|l|d|u|r|r|d|d|l|l|d|l|l|u|r|r|u|u|l|l|d|
+microban/microban_14.txt,IDA*,Solved,Manhattan,Dynamic,118,0,39,1617,5.105341911,u|u|l|l|l|l|d|d|r|d|r|u|l|l|u|u|r|r|r|r|d|d|l|l|l|r|r|r|u|u|l|l|d|u|r|r|d|d|l|l|d|l|l|u|r|r|u|u|l|l|d|
+microban/microban_14.txt,IDA*,Solved,Euclidean,Fixed (1),118,0,61,2598,8.690294027,u|u|l|l|l|l|d|d|r|d|r|u|l|l|u|u|r|r|r|r|d|d|l|l|l|r|r|r|u|u|l|l|d|u|r|r|d|d|l|l|d|l|l|u|r|r|u|u|l|l|d|
+microban/microban_14.txt,IDA*,Solved,Euclidean,Fixed (4),118,0,19,722,2.276288748,u|u|l|l|l|l|d|d|r|d|r|u|l|l|u|u|r|r|r|r|d|d|l|l|l|r|r|r|u|u|l|l|d|u|r|r|d|d|l|l|d|l|l|u|r|r|u|u|l|l|d|
+microban/microban_14.txt,IDA*,Solved,Euclidean,Dynamic,118,0,61,2595,8.541896105,u|u|l|l|l|l|d|d|r|d|r|u|l|l|u|u|r|r|r|r|d|d|l|l|l|r|r|r|u|u|l|l|d|u|r|r|d|d|l|l|d|l|l|u|r|r|u|u|l|l|d|
+microban/microban_15.txt,bfs,Solved,None,None,466,237,25,182,0.916524649,d|r|d|d|d|l|l|u|u|d|d|r|r|u|u|l|r|u|l|l|l|r|d|r|r|u|l|l|l|l|r|r|r|r|d|d|d|l|l|u|d|r|r|u|u|l|u|l|l|l|d|l|l|u|r|r|r|r|d|r|r|d|d|l|l|u|u|
+microban/microban_15.txt,IDA*,Solved,Manhattan,Fixed (1),384,0,51,2324,9.700327873,d|r|d|d|d|l|l|u|u|d|d|r|r|u|u|l|u|l|l|l|d|l|l|u|r|r|r|r|d|r|r|d|d|l|l|u|u|
+microban/microban_15.txt,IDA*,Solved,Manhattan,Fixed (4),403,0,16,1211,5.102907181,d|r|d|d|d|l|l|u|u|d|d|r|r|u|u|l|r|u|l|l|l|l|d|l|l|u|r|r|r|r|d|r|r|d|d|l|l|u|u|
+microban/microban_15.txt,IDA*,Solved,Manhattan,Dynamic,384,0,51,2299,9.376089096,d|r|d|d|d|l|l|u|u|d|d|r|r|u|u|l|u|l|l|l|d|l|l|u|r|r|r|r|d|r|r|d|d|l|l|u|u|
+microban/microban_15.txt,IDA*,Solved,Euclidean,Fixed (1),430,0,108,4684,19.90185404,d|r|d|d|d|l|l|u|u|d|d|r|r|u|u|l|u|l|l|l|d|l|l|u|r|r|r|r|d|r|r|d|d|l|l|u|u|
+microban/microban_15.txt,IDA*,Solved,Euclidean,Fixed (4),230,0,46,1239,5.135978937,d|r|d|d|d|l|l|u|u|d|d|r|r|u|u|l|r|u|l|l|l|l|d|l|l|u|r|r|r|r|d|r|r|d|d|l|l|u|u|
+microban/microban_15.txt,IDA*,Solved,Euclidean,Dynamic,430,0,108,4626,19.93877816,d|r|d|d|d|l|l|u|u|d|d|r|r|u|u|l|u|l|l|l|d|l|l|u|r|r|r|r|d|r|r|d|d|l|l|u|u|
+microban/microban_17.txt,bfs,Solved,None,None,849,488,38,255,1.570523024,r|d|l|l|d|u|r|r|d|u|l|l|d|r|d|d|r|r|u|l|r|d|l|l|l|u|r|l|d|r|r|r|u|l|r|d|l|l|u|r|r|d|l|l|l|u|u|d|r|r|u|d|r|d|l|l|l|u|r|u|
+microban/microban_17.txt,IDA*,Solved,Manhattan,Fixed (1),224,0,110,1207,3.683262825,r|d|d|u|l|l|d|r|d|d|r|r|u|l|u|d|d|l|u|u|d|d|l|u|u|
+microban/microban_17.txt,IDA*,Solved,Manhattan,Fixed (4),301,0,67,645,2.085349083,r|d|d|u|l|l|d|r|d|d|r|r|u|l|u|d|d|l|u|u|d|d|l|u|u|
+microban/microban_17.txt,IDA*,Solved,Manhattan,Dynamic,227,0,126,1062,3.576035976,r|d|d|u|l|l|d|r|d|d|r|r|u|l|u|d|d|l|l|u|u|d|d|r|u|u|
+microban/microban_17.txt,IDA*,Solved,Euclidean,Fixed (1),288,0,237,2406,7.764962196,r|d|d|u|l|l|d|r|d|d|r|r|u|l|u|d|d|l|u|u|d|d|l|u|u|
+microban/microban_17.txt,IDA*,Solved,Euclidean,Fixed (4),286,0,48,548,1.788574934,r|d|d|u|l|l|d|r|d|d|r|r|u|l|u|d|d|l|u|u|d|d|l|u|u|
+microban/microban_17.txt,IDA*,Solved,Euclidean,Dynamic,298,0,228,1519,5.125629902,r|d|d|u|l|l|d|r|d|d|r|r|u|l|u|d|d|l|u|u|d|d|l|u|u|
+microban/microban_18.txt,bfs,Solved,None,None,3020,1724,87,953,15.69295716,r|u|u|l|r|u|u|r|u|l|l|l|l|d|d|d|r|r|d|r|d|d|l|u|r|u|u|l|d|r|u|u|d|l|l|l|u|u|r|r|u|r|r|d|l|r|u|l|l|l|l|d|d|d|r|r|r|d|d|d|l|u|r|u|u|l|l|l|u|u|r|r|l|l|u|r|r|r|r|d|l|l|r|r|u|l|l|l|l|d|d|d|r|r|r|d|d|l|u|r|u|l|r|u|u|r|u|l|l|l|l|d|r|r|l|l|d|d|r|r|l|l|u|u|r|r|u|r|r|d|l|r|u|l|l|l|l|d|d|d|r|r|d|r|u|l|l|l|u|u|r|r|l|l|u|r|r|r|r|d|l|l|r|r|u|l|l|l|l|d|d|d|r|r|r|u|d|l|l|l|u|u|u|r|r|d|l|r|u|r|r|d|l|
+microban/microban_18.txt,IDA*,Solved,Manhattan,Fixed (4),1161,0,117,7654,46.16173482,r|u|u|l|r|u|u|l|l|l|d|d|r|r|d|r|u|u|d|l|l|l|u|u|r|u|l|r|r|r|r|d|l|d|d|l|d|r|d|d|l|u|u|r|u|u|u|l|u|l|l|d|d|d|r|r|d|r|u|u|d|d|l|u|l|l|u|u|u|r|r|d|l|u|r|r|r|d|l|
+microban/microban_18.txt,IDA*,Solved,Euclidean,Fixed (4),1515,0,114,10235,63.59309387,r|u|u|l|r|u|u|l|l|l|d|d|r|r|d|r|u|u|d|l|l|l|u|u|r|r|u|r|r|d|l|d|d|d|d|d|l|u|u|d|r|u|u|u|u|l|u|l|l|d|d|d|r|r|d|d|r|u|u|u|d|l|l|l|u|u|u|r|r|d|l|r|u|l|r|r|r|d|l|
+microban/microban_19.txt,bfs,Solved,None,None,1332,741,54,424,3.603458881,l|l|u|r|r|r|r|d|r|u|l|l|l|l|l|d|r|r|r|l|l|l|u|r|r|r|r|r|d|l|l|r|d|d|u|u|r|u|l|l|l|l|l|d|r|r|r|l|l|l|u|r|r|r|r|r|d|l|d|d|l|d|d|r|u|u|u|u|r|u|l|l|l|d|r|l|l|l|u|r|l|d|r|r|r|u|r|d|r|u|l|l|l|r|r|r|d|l|l|l|l|l|u|r|r|r|l|l|l|d|r|r|r|r|r|u|l|r|d|l|d|d|l|d|d|r|u|u|u|u|
+microban/microban_19.txt,IDA*,Solved,Manhattan,Fixed (1),873,0,87,6786,31.89139628,u|r|r|d|d|d|l|d|d|r|u|u|u|u|r|u|l|l|l|d|r|u|r|d|d|d|l|d|d|r|u|u|u|u|l|l|l|l|u|r|r|
+microban/microban_19.txt,IDA*,Solved,Manhattan,Fixed (4),748,0,93,3594,18.16468191,l|l|u|r|r|r|r|d|d|d|l|d|d|r|u|u|u|u|r|u|l|l|l|d|r|l|u|r|r|d|d|d|l|d|d|r|u|u|u|u|d|u|l|l|l|l|u|r|r|
+microban/microban_19.txt,IDA*,Solved,Manhattan,Dynamic,760,0,143,7015,33.6925633,l|u|r|r|r|d|d|d|l|d|d|r|u|u|u|u|r|u|l|l|l|d|r|u|r|d|d|d|l|d|d|r|u|u|u|u|l|l|l|l|u|r|r|
+microban/microban_19.txt,IDA*,Solved,Euclidean,Fixed (4),676,0,89,3871,18.95395803,l|l|u|r|r|r|r|d|d|d|l|d|d|r|u|u|u|u|r|u|l|l|l|d|r|l|u|r|r|d|d|d|l|d|d|r|u|u|u|u|l|l|l|l|u|r|r|
+microban/microban_20.txt,bfs,Solved,None,None,1006,555,46,334,2.218209028,l|l|u|r|r|r|d|r|l|d|d|r|r|r|u|u|l|r|d|d|l|l|l|l|d|d|r|u|u|r|r|r|u|u|l|l|l|r|r|r|d|d|l|l|l|u|d|r|r|r|u|u|l|l|u|l|d|l|r|r|r|r|d|d|l|l|l|u|d|r|r|r|u|u|l|l|u|l|l|d|r|r|r|l|l|l|u|l|l|d|r|r|r|r|
+microban/microban_20.txt,IDA*,Solved,Manhattan,Fixed (1),861,0,206,12144,64.18232393,u|r|d|d|d|r|r|r|u|u|l|l|l|l|r|d|d|l|d|d|r|u|u|u|d|r|r|r|u|u|l|l|u|l|l|d|r|r|r|l|u|l|l|l|l|d|r|r|r|r|
+microban/microban_20.txt,IDA*,Solved,Manhattan,Fixed (4),874,0,121,5136,27.84911895,l|l|u|r|r|r|d|r|l|d|d|r|r|r|u|u|l|l|l|l|r|d|d|l|d|d|r|u|u|u|d|r|r|r|u|u|l|l|u|l|l|d|r|r|r|l|u|l|l|l|l|d|r|r|r|r|
+microban/microban_20.txt,IDA*,Solved,Euclidean,Fixed (4),815,0,154,6418,35.56813693,l|l|u|r|r|r|d|r|l|d|d|r|r|r|u|u|l|l|l|l|r|d|d|l|d|d|r|u|u|u|d|r|r|r|u|u|l|l|u|l|l|d|r|r|r|l|u|l|l|l|l|d|r|r|r|r|
+microban/microban_21.txt,bfs,Solved,None,None,193,89,15,84,0.323873997,d|l|l|l|u|l|u|r|r|l|l|d|r|d|r|r|r|u|u|l|l|r|r|d|d|l|l|u|l|l|u|u|r|d|r|d|d|l|u|
+microban/microban_21.txt,IDA*,Solved,Manhattan,Fixed (1),111,0,21,353,0.877703905,d|l|l|u|d|l|u|l|u|u|r|d|r|d|d|l|u|
+microban/microban_21.txt,IDA*,Solved,Manhattan,Fixed (4),96,0,17,265,0.688650846,d|l|l|l|u|d|r|u|l|l|u|u|r|d|r|d|d|l|u|
+microban/microban_21.txt,IDA*,Solved,Manhattan,Dynamic,85,0,21,259,0.664638996,d|l|l|l|u|d|r|u|l|l|u|u|r|d|r|d|d|l|u|
+microban/microban_21.txt,IDA*,Solved,Euclidean,Fixed (1),134,0,20,642,1.612912893,d|l|l|u|d|l|u|l|u|u|r|d|r|d|d|l|u|
+microban/microban_21.txt,IDA*,Solved,Euclidean,Fixed (4),88,0,17,221,0.562822104,d|l|l|l|u|d|r|u|l|l|u|u|r|d|r|d|d|l|u|
+microban/microban_21.txt,IDA*,Solved,Euclidean,Dynamic,82,0,41,435,1.110160828,d|l|l|l|u|d|r|u|l|l|u|u|r|d|r|d|d|l|u|
+microban/microban_22.txt,bfs,Solved,None,None,2909,1652,143,863,17.17874098,d|r|r|r|u|u|l|d|r|d|l|r|u|l|u|r|u|u|l|l|l|l|d|r|d|d|r|l|d|r|l|u|u|u|r|u|r|r|d|d|d|l|l|r|r|u|u|u|l|l|l|l|d|r|d|d|r|d|d|l|u|u|r|r|r|d|l|r|u|l|l|l|d|d|r|u|r|r|u|l|u|r|u|u|l|l|l|l|d|r|d|d|r|l|u|u|r|u|r|r|d|d|d|l|r|d|l|l|d|l|u|u|r|l|d|r|r|r|u|u|u|u|l|l|l|l|d|r|d|u|r|u|r|r|d|d|d|d|l|l|l|u|u|d|r|d|r|r|u|l|r|d|l|l|l|u|u|u|r|u|r|r|d|d|l|d|r|d|l|l|l|u|r|l|d|r|r|r|u|l|l|r|r|d|l|l|l|u|r|r|r|u|u|u|l|l|d|l|l|u|r|r|l|l|d|r|d|d|r|r|r|d|l|l|d|l|u|u|u|u|r|u|l|r|d|l|d|d|r|r|r|u|u|u|l|
+microban/microban_22.txt,IDA*,Solved,Manhattan,Fixed (4),1809,0,316,8406,51.07808805,d|r|r|r|u|u|l|d|r|d|l|l|d|l|u|u|u|u|l|u|r|r|d|l|d|d|d|r|r|u|l|r|r|d|l|l|l|u|u|u|r|u|l|d|d|d|d|r|r|r|u|u|u|u|l|
+microban/microban_22.txt,IDA*,Solved,Manhattan,Dynamic,1797,0,411,11201,66.96844387,d|r|r|r|u|u|l|d|l|d|l|u|u|u|l|u|r|r|d|l|d|d|r|r|r|d|l|l|d|l|u|u|u|u|r|u|l|d|d|d|r|r|u|r|u|u|l|
+microban/microban_22.txt,IDA*,Solved,Euclidean,Fixed (4),2027,0,197,10601,64.9615438,d|r|r|r|u|u|l|d|r|d|l|l|d|l|u|u|u|u|l|u|r|r|d|l|d|d|d|r|r|u|l|d|d|l|u|u|u|u|r|u|l|d|d|d|d|d|r|u|r|r|u|u|u|u|l|
+microban/microban_23.txt,bfs,Solved,None,None,710,377,43,245,1.544126987,r|d|l|l|u|r|r|u|u|r|u|l|l|r|r|d|l|l|l|l|u|r|r|l|l|d|r|r|r|d|d|l|l|u|d|r|r|u|u|l|u|l|l|d|r|d|d|r|r|u|u|r|u|l|l|r|r|d|l|d|d|l|l|u|u|r|u|r|d|r|u|l|l|d|l|l|u|r|r|l|l|d|r|r|r|r|u|l|r|d|l|d|
+microban/microban_23.txt,IDA*,Solved,Manhattan,Fixed (1),340,0,52,5920,24.12006927,r|u|u|l|l|u|r|d|r|d|d|d|l|l|u|u|d|r|r|u|u|l|u|l|l|d|r|d|d|r|r|u|u|r|u|l|l|r|d|d|d|l|l|u|u|r|u|r|d|d|u|l|l|l|u|r|
+microban/microban_23.txt,IDA*,Solved,Manhattan,Fixed (4),329,0,27,2547,10.60266805,r|u|u|l|l|l|u|r|r|d|r|d|d|d|l|l|u|u|d|r|r|u|u|l|u|l|l|d|r|d|d|r|r|u|u|r|u|l|l|r|r|d|l|d|d|l|d|l|u|u|u|r|u|r|d|d|u|l|l|l|u|r|
+microban/microban_23.txt,IDA*,Solved,Manhattan,Dynamic,381,0,37,5608,22.97038007,r|u|u|l|l|u|r|d|r|d|d|d|l|l|u|u|d|r|r|u|u|l|u|l|l|d|r|d|d|r|r|u|u|r|u|l|l|r|d|d|d|l|l|u|u|r|u|r|d|d|u|l|l|l|u|r|
+microban/microban_23.txt,IDA*,Solved,Euclidean,Fixed (4),402,0,15,3208,13.5384047,r|u|u|l|l|u|r|d|r|d|d|d|l|l|u|u|d|r|r|u|u|l|u|l|l|d|r|d|d|d|r|r|u|u|u|r|u|l|l|r|d|d|d|l|l|u|u|r|u|r|d|d|u|l|l|l|u|r|
+microban/microban_24.txt,bfs,Solved,None,None,1718,1029,30,485,4.448248148,u|l|l|d|d|l|l|d|r|r|l|l|d|r|r|r|r|u|l|l|r|r|d|l|l|l|l|u|u|r|r|u|u|r|r|d|l|r|u|l|l|d|d|l|d|r|d|r|r|u|l|l|u|l|l|d|d|r|r|l|l|u|u|r|d|
+microban/microban_24.txt,IDA*,Solved,Manhattan,Fixed (1),807,0,115,4167,17.87300086,u|l|l|d|d|l|d|d|r|r|u|l|u|u|u|r|r|d|l|u|l|d|d|d|u|l|l|d|d|r|r|u|u|l|d|
+microban/microban_24.txt,IDA*,Solved,Manhattan,Fixed (4),690,0,60,2307,10.55591106,u|l|l|d|d|l|l|d|r|r|l|l|d|r|r|r|r|u|l|l|u|u|u|r|r|d|l|r|u|l|l|d|d|d|u|l|l|d|d|r|r|u|u|l|d|
+microban/microban_24.txt,IDA*,Solved,Manhattan,Dynamic,716,0,99,2732,12.36630821,u|l|l|d|d|l|l|d|r|d|r|r|r|u|l|l|u|u|u|r|r|d|l|u|l|d|d|d|u|u|d|l|l|d|d|r|r|u|u|l|d|
+microban/microban_24.txt,IDA*,Solved,Euclidean,Fixed (4),568,0,100,1843,7.922401905,u|l|l|d|d|l|l|d|r|d|r|r|r|u|l|l|u|u|u|r|r|d|l|u|l|d|d|d|u|l|l|d|d|r|r|u|u|l|d|
+microban/microban_24.txt,IDA*,Solved,Euclidean,Dynamic,1612,0,340,6511,32.41662598,u|l|l|d|d|l|l|d|r|d|r|r|r|u|l|l|u|u|u|r|r|d|l|u|l|d|d|d|u|l|l|d|d|r|r|u|u|l|d|
+microban/microban_25.txt,bfs,Solved,None,None,3379,1952,108,1000,13.20626998,l|u|r|r|r|d|l|r|u|l|l|l|d|l|d|r|r|u|l|u|r|l|u|u|r|d|l|d|d|r|r|r|u|u|l|l|r|r|d|d|l|u|r|d|l|l|l|u|r|u|u|l|d|d|r|d|r|r|u|l|r|d|l|l|d|l|l|u|r|r|l|u|u|r|d|r|r|u|l|r|d|l|l|l|d|l|d|r|r|u|l|u|r|l|u|u|r|d|r|r|d|d|l|l|r|r|u|u|l|d|r|u|l|l|l|d|r|l|u|r|r|r|d|l|l|d|d|l|l|u|r|l|d|r|r|u|l|u|r|u|r|r|d|l|r|d|l|r|u|l|u|l|u|l|d|r|r|r|d|l|d|l|d|l|l|u|r|u|r|u|r|r|d|d|l|l|r|r|u|u|l|l|u|l|d|r|r|r|d|d|l|l|d|l|l|u|r|l|d|r|r|u|
+microban/microban_25.txt,IDA*,Solved,Manhattan,Fixed (1),385,0,295,3104,11.9050889,u|r|r|d|l|u|l|l|u|u|r|d|l|d|r|l|d|d|r|u|r|r|u|u|l|l|u|l|d|
+microban/microban_25.txt,IDA*,Solved,Manhattan,Fixed (4),699,0,153,1877,7.795294285,l|u|r|r|r|d|l|r|u|l|l|l|u|u|r|d|l|d|r|l|d|l|d|r|r|u|r|r|u|u|l|l|u|l|d|
+microban/microban_25.txt,IDA*,Solved,Manhattan,Dynamic,565,0,241,3062,12.09819508,l|u|r|r|r|d|l|u|l|l|u|u|r|d|l|d|r|l|d|d|r|u|r|r|u|u|l|l|u|l|d|
+microban/microban_25.txt,IDA*,Solved,Euclidean,Fixed (1),1944,0,524,6153,26.45276499,u|r|r|d|l|u|l|l|u|u|r|d|l|d|r|l|d|d|r|u|r|r|u|u|l|l|u|l|d|
+microban/microban_25.txt,IDA*,Solved,Euclidean,Fixed (4),682,0,187,2241,9.381951094,l|u|r|r|r|d|l|r|u|l|l|l|u|u|r|d|l|d|r|l|d|l|d|r|r|u|r|r|u|u|l|l|u|l|d|
+microban/microban_25.txt,IDA*,Solved,Euclidean,Dynamic,1040,0,324,6050,25.60550976,l|u|r|r|r|d|l|u|l|l|u|u|r|d|l|d|r|l|d|d|r|u|r|r|u|u|l|l|u|l|d|
+microban/microban_26.txt,bfs,Solved,None,None,4140,2447,26,1252,9.187472105,r|d|d|d|l|u|r|d|d|d|l|u|u|l|l|d|r|l|u|r|r|r|d|d|l|u|r|u|l|r|u|u|u|l|l|d|r|l|u|r|r|d|l|d|d|r|d|d|l|u|r|u|u|l|u|l|u|r|r|d|d|
+microban/microban_26.txt,IDA*,Solved,Manhattan,Fixed (1),1271,0,167,6835,31.50623608,r|d|d|d|l|u|r|d|d|d|l|u|u|l|l|d|r|u|r|r|d|d|l|u|r|u|l|r|u|u|u|l|l|d|r|d|u|u|r|d|d|
+microban/microban_26.txt,IDA*,Solved,Manhattan,Fixed (4),707,0,184,2627,11.46753693,r|d|d|d|l|u|r|d|d|d|l|u|u|l|l|d|r|l|u|r|r|r|d|d|l|u|r|u|l|r|u|u|u|l|l|d|r|d|u|u|r|d|d|
+microban/microban_26.txt,IDA*,Solved,Manhattan,Dynamic,1151,0,244,7073,32.49703693,r|d|d|d|l|u|r|d|d|d|l|u|u|l|l|d|r|u|r|r|d|d|l|u|r|u|l|r|u|u|u|l|l|d|r|d|u|u|r|d|d|
+microban/microban_26.txt,IDA*,Solved,Euclidean,Fixed (4),860,0,258,4204,19.25374627,r|d|d|d|l|u|r|d|d|d|l|u|u|l|l|d|r|l|u|r|r|r|d|d|l|u|r|u|l|r|u|u|u|l|l|d|r|l|u|r|r|d|d|u|l|d|
+microban/microban_26.txt,IDA*,Solved,Euclidean,Dynamic,1713,0,747,12859,63.28806806,r|d|d|d|l|u|r|d|d|d|l|u|u|l|l|d|r|u|r|r|d|d|l|u|r|u|l|r|u|u|u|l|l|d|r|d|u|u|r|d|d|
+microban/microban_27.txt,bfs,Solved,None,None,845,428,28,354,1.820668936,d|l|l|d|l|l|u|u|u|u|r|r|r|d|d|l|l|r|r|u|u|l|l|l|d|d|r|r|d|d|l|l|u|u|r|r|r|r|d|l|r|u|l|l|l|l|d|d|r|r|u|r|r|u|l|l|r|r|d|l|l|d|l|l|u|u|r|r|l|l|d|d|r|r|u|r|r|u|l|u|u|l|l|l|d|d|r|r|l|l|d|u|r|r|d|r|u|u|
+microban/microban_27.txt,IDA*,Solved,Manhattan,Fixed (1),582,0,50,6379,20.80668092,d|l|u|l|d|d|l|l|u|u|u|u|r|r|r|d|u|l|l|l|d|d|d|d|r|r|u|u|l|r|d|r|r|u|l|u|u|l|l|l|d|d|d|u|r|r|d|r|u|u|
+microban/microban_27.txt,IDA*,Solved,Manhattan,Fixed (4),463,0,56,3383,11.2588048,d|l|u|l|r|r|d|l|l|d|l|l|u|u|u|u|r|r|r|d|u|l|l|l|d|d|d|d|r|r|u|u|l|r|d|r|r|u|l|l|r|u|u|l|l|l|d|d|r|r|d|r|u|u|d|l|l|l|d|
+microban/microban_27.txt,IDA*,Solved,Manhattan,Dynamic,637,0,43,6006,20.12011695,d|l|u|l|d|d|l|l|u|u|u|u|r|r|r|d|u|l|l|l|d|d|d|d|r|r|u|u|l|r|d|r|r|u|l|u|u|l|l|l|d|d|d|u|r|r|d|r|u|u|
+microban/microban_27.txt,IDA*,Solved,Euclidean,Fixed (1),761,0,98,14475,50.81504321,d|l|u|l|d|d|l|l|u|u|u|u|r|r|r|d|u|l|l|l|d|d|d|d|r|r|u|u|l|r|d|r|r|u|l|u|u|l|l|l|d|d|d|u|r|r|d|r|u|u|
+microban/microban_27.txt,IDA*,Solved,Euclidean,Fixed (4),585,0,50,3704,12.32909393,d|l|u|l|d|d|l|l|u|u|u|u|r|r|r|d|u|l|l|l|d|d|d|d|r|r|u|u|l|r|d|r|r|u|l|u|u|l|l|l|d|d|r|r|d|r|u|u|d|l|l|l|d|
+microban/microban_27.txt,IDA*,Solved,Euclidean,Dynamic,761,0,98,13269,47.94706202,d|l|u|l|d|d|l|l|u|u|u|u|r|r|r|d|u|l|l|l|d|d|d|d|r|r|u|u|l|r|d|r|r|u|l|u|u|l|l|l|d|d|d|u|r|r|d|r|u|u|
+microban/microban_28.txt,bfs,Solved,None,None,893,515,31,273,2.061030865,r|d|u|l|l|d|r|d|r|l|d|r|r|r|u|l|l|r|r|d|l|l|l|u|r|u|d|r|r|d|l|l|l|u|u|l|u|u|r|r|d|d|l|d|r|l|u|r|u|u|l|d|d|
+microban/microban_28.txt,IDA*,Solved,Manhattan,Fixed (1),319,0,63,2377,8.521340847,r|d|u|l|l|d|r|d|d|r|r|u|l|d|l|u|u|l|u|u|r|r|d|d|l|d|r|u|u|u|l|d|d|
+microban/microban_28.txt,IDA*,Solved,Manhattan,Fixed (4),356,0,20,1663,6.375769854,r|d|u|l|l|d|r|d|r|l|d|r|r|r|u|l|l|r|r|d|l|l|l|u|u|l|u|u|r|r|d|d|l|d|r|l|u|l|u|u|r|d|d|
+microban/microban_28.txt,IDA*,Solved,Manhattan,Dynamic,311,0,63,2026,7.242584229,r|d|u|l|l|d|r|d|d|r|r|u|l|d|l|u|u|l|u|u|r|r|d|d|l|d|r|u|u|u|l|d|d|
+microban/microban_28.txt,IDA*,Solved,Euclidean,Fixed (1),574,0,330,5054,23.24460912,r|d|u|l|l|d|r|d|d|r|r|u|l|d|l|u|u|l|u|u|r|r|d|d|l|d|r|u|u|u|l|d|d|
+microban/microban_28.txt,IDA*,Solved,Euclidean,Fixed (4),298,0,33,1263,5.340498924,r|d|u|l|l|d|r|d|d|r|r|u|l|d|l|u|u|l|u|u|r|r|d|d|u|d|l|d|r|u|u|u|l|d|d|
+microban/microban_28.txt,IDA*,Solved,Euclidean,Dynamic,738,0,169,6225,27.90565705,r|d|u|l|l|d|r|d|d|r|r|u|l|d|l|u|u|l|u|u|r|r|d|d|l|d|r|u|u|u|l|d|d|
+microban/microban_29.txt,bfs,Solved,None,None,2646,1438,126,922,14.58620787,l|u|l|l|d|r|l|u|r|r|r|d|r|r|d|d|l|l|l|l|l|l|l|u|u|r|l|d|d|r|r|r|r|r|r|r|u|u|l|l|u|l|l|d|r|r|r|l|l|l|u|l|l|d|r|r|r|r|l|l|l|l|l|d|d|r|r|r|r|r|r|r|u|u|l|r|u|r|u|u|l|d|d|d|l|l|l|r|u|l|l|l|l|d|r|r|r|r|l|l|l|l|l|d|d|r|r|r|r|r|r|r|u|u|l|l|r|r|u|d|l|l|l|r|r|r|d|d|l|l|l|l|l|l|l|u|u|r|r|r|r|r|l|l|l|l|l|d|d|r|r|r|r|r|r|r|u|u|l|l|l|l|r|r|r|r|u|r|u|u|l|d|d|d|l|l|l|l|u|l|l|d|r|r|r|l|l|l|l|d|d|r|r|r|r|r|r|r|u|u|u|u|r|d|l|d|l|l|r|r|d|d|l|l|l|l|l|l|l|u|u|r|r|r|r|r|r|l|l|l|l|l|l|d|d|r|r|r|r|r|r|r|u|u|u|r|u|u|l|d|r|u|l|u|l|l|d|r|d|r|d|r|u|l|l|u|l|u|r|r|d|r|d|d|l|d|u|r|u|u|l|d|
+microban/microban_30.txt,bfs,Solved,None,None,1709,1005,56,479,4.301045895,l|d|r|r|u|r|u|l|r|d|l|l|l|u|r|l|u|u|r|d|l|d|d|r|r|r|u|u|l|r|d|d|l|l|l|u|u|r|d|l|d|d|r|r|u|r|u|l|r|d|l|l|r|d|l|l|u|u|r|u|u|l|d|d|r|d|r|r|u|u|l|r|d|d|l|l|u|l|u|u|r|d|r|r|d|d|l|l|d|l|u|
+microban/microban_30.txt,IDA*,Solved,Manhattan,Fixed (1),191,0,128,1409,4.256594896,l|u|u|u|r|d|l|d|d|d|r|r|u|r|u|u|l|l|u|l|d|
+microban/microban_30.txt,IDA*,Solved,Manhattan,Fixed (4),191,0,53,436,1.330578089,l|u|u|u|r|d|l|d|d|d|r|r|u|r|u|u|l|l|u|l|d|
+microban/microban_30.txt,IDA*,Solved,Manhattan,Dynamic,168,0,99,878,2.586750984,l|u|u|u|r|d|l|d|d|r|d|r|u|r|u|u|l|l|u|l|d|
+microban/microban_30.txt,IDA*,Solved,Euclidean,Fixed (1),191,0,250,2222,6.743754864,l|u|u|u|r|d|l|d|d|d|r|r|u|r|u|u|l|l|u|l|d|
+microban/microban_30.txt,IDA*,Solved,Euclidean,Fixed (4),590,0,20,926,3.064338923,l|u|u|u|r|d|l|d|d|r|d|r|u|r|u|u|l|l|u|l|d|
+microban/microban_30.txt,IDA*,Solved,Euclidean,Dynamic,191,0,270,1714,5.654256821,l|u|u|u|r|d|l|d|d|d|r|r|u|r|u|u|l|l|u|l|d|
