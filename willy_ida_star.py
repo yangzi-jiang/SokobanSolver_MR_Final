@@ -44,7 +44,7 @@ def isClosed(closedSet, x):
             return True
     return False
 
-def IDAstar(b, h_method, path_limit = None):
+def IDAstar(b, h_method, path_limit_increment = None):
     # Bookkeeping
     start = time()
     curr_time = start
@@ -65,12 +65,12 @@ def IDAstar(b, h_method, path_limit = None):
 
     while_loop_counter = 0
 
-    while (curr_time - start <= 120): #Time limit per puzzle in secs
+    while (curr_time - start <= 60): # Time limit per puzzle in secs
         while_loop_counter += 1
 
-        if(path_limit != None):
-            pathLimit = pathLimit + path_limit
-        else:
+        if(path_limit_increment != None):
+            pathLimit = pathLimit + path_limit_increment
+        else:  # Increase path limit diminishingly as each outside while loop runs
             if(h(b, h_method) / while_loop_counter) > 1:
                 pathLimit = pathLimit + h(b, h_method) / while_loop_counter
             pathLimit = pathLimit + 1
@@ -89,13 +89,14 @@ def IDAstar(b, h_method, path_limit = None):
             if currentState.is_win():
                 end = time()
                 print_results(currentState, nodes, nodes_repeated, fringe_nodes, nodes_explored, end - start)
-                return currentState # SOLUTION FOUND!!!
+                return currentState, nodes, nodes_repeated, fringe_nodes, nodes_explored, end - start, "Solved" # SOLUTION FOUND!!!
 
             if nodes % 1000000 == 0:
                 print ((nodes/1000000), "M nodes checked")
             if nodes == MAXNODES:
                 print("Limit of nodes reached: exiting without a solution.")
-                sys.exit(1)
+                return currentState, nodes, nodes_repeated, fringe_nodes, nodes_explored, end - start, "Not solved"
+                # sys.exit(1)
 
             if currentState.f_cost <= pathLimit:
                 closedSet.insert(0, currentState)
@@ -129,7 +130,7 @@ def IDAstar(b, h_method, path_limit = None):
         it = it + 1
         if len(visitSet) == 0:
             print("FAIL")
-            return None
+            return currentState, nodes, nodes_repeated, fringe_nodes, nodes_explored, end - start, "Not solved"
 
         # set a new cut-off value (pathLimit)
         low = visitSet[0].f_cost

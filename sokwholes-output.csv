@@ -1,0 +1,8 @@
+Puzzle Name,Search Method,Is Solved,Heuristic,Iteration Step,Nodes Generated,Nodes Repeated,Fringe Nodes,Explored Nodes,Duration,Path
+levels/sokwhole/sokwhole_1.txt,bfs,Solved,None,None,2,0,0,1,0.0016717910766601562,d|
+levels/sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Fixed (1),2,0,0,1,0.0012447834014892578,d|
+levels/sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Fixed (4),2,0,0,1,0.002146005630493164,d|
+levels/sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Dynamic,2,0,0,1,0.0004169940948486328,d|
+levels/sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Fixed (1),2,0,0,1,0.0004088878631591797,d|
+levels/sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Fixzed (4),2,0,0,1,0.003698110580444336,d|
+levels/sokwhole/sokwhole_1.txt,IDA*,Solved,Manhattan,Dynamic,2,0,0,1,0.0008497238159179688,d|

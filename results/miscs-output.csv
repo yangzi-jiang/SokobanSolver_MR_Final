@@ -1,0 +1,7 @@
+Puzzle Name,Search Method,Is Solved,Heuristic,Iteration Step,Nodes Generated,Nodes Repeated,Fringe Nodes,Explored Nodes,Duration,Path
+misc/easy4.txt,IDA*,Solved,Manhattan,Fixed (4),1519,0,323,1585,10.379076957702637,l|u|u|u|l|l|u|r|r|d|d|d|d|l|d|l|u|u|u|u|l|u|r|
+misc/minicosmos1.txt,bfs,Solved,None,None,239,110,25,100,0.551163911819458,r|r|u|r|r|u|u|l|l|l|d|l|l|u|u|r|l|d|d|r|r|r|d|r|r|u|u|l|u|u|l|l|d|d|r|r|r|d|d|l|l|d|l|l|u|u|r|l|l|u|u|r|r|d|r|r|r|d|d|l|l|u|l|l|l|u|u|r|r|d|r|
+misc/minicosmos1.txt,IDA*,Solved,Manhattan,Fixed (1),87,0,52,1012,4.252940893173218,u|u|l|u|u|r|l|d|d|r|r|u|r|r|u|u|l|l|d|d|u|l|l|d|d|r|r|l|d|d|r|r|u|u|l|u|r|
+misc/minicosmos1.txt,IDA*,Solved,Manhattan,Fixed (4),119,0,29,520,2.7295658588409424,r|r|u|u|l|l|l|u|u|r|l|d|d|r|r|r|u|r|u|u|l|l|d|d|u|u|d|l|l|d|d|r|r|l|d|d|r|r|u|u|d|u|l|u|r|
+misc/minicosmos1.txt,IDA*,Solved,Manhattan,Dynamic,100,0,34,502,3.015839099884033,r|r|u|u|l|l|l|u|u|r|l|d|d|r|r|r|u|r|u|u|l|l|d|d|u|l|l|d|d|r|r|l|d|d|r|r|u|u|l|u|r|
+misc/minicosmos1.txt,IDA*,Solved,Manhattan,Fixed (4),143,0,32,660,3.299412965774536,r|r|u|u|l|l|l|u|u|r|l|d|d|r|r|u|r|r|u|u|l|l|d|d|u|l|l|d|d|r|r|l|d|d|r|r|u|u|d|u|l|u|r|
