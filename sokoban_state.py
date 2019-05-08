@@ -31,6 +31,8 @@ class State:
         self.spaces = []
         self.deadlocks = []
         self.cost = 1
+        self.g_cost = 0
+        self.f_cost = 0
         self.boxes_on_goal = []
 
     def __eq__(self, other):

@@ -1,3 +1,4 @@
+from time import time
 from copy import deepcopy
 from hash_table import HashTable
 from location import Location
@@ -21,31 +22,38 @@ class IDA:
     f = -1
 
     @staticmethod
-    def h(node):
-        return heuristics.get_heuristics()
+    def h(board):
+        return heuristics.get_heuristics(board)
 
     @staticmethod
-    def cost(node, successor):
+    def costFrom(board, successor):
         pass
 
     @staticmethod
-    def successors(node):
-        temp_list = []
-        return temp_list
+    def successors(board):
+        return board.moves_available()
     
     @staticmethod
-    def is_goal(node):
+    def is_goal(board):
         return True
 
     @staticmethod
-    def ida_star(root):
-        bound = IDA.h(root)
-        path = [root]
-        t = 0
+    def ida_star(board):
+        # Bookkeeping
+        start = time()
+        nodes_generated = 0
+        nodes_repeated = 0
 
-        while (t != math.inf):
+        # Create copy of og board to modify
+        node = deepcopy(board)
+        nodes_generated += 1
+
+        bound = IDA.h(board)
+        path = [root]
+
+        while (True):
             t = IDA.search(path, 0, bound)
-            if (t== FOUND):
+            if (t == FOUND):
                 return FOUND
             if (t == math.inf):
                 return NOT_FOUND
@@ -58,13 +66,14 @@ class IDA:
         if (f > bound):
             return f
         if (IDA.is_goal(node)):
+            print("Solution found")
             return FOUND
         
         min = math.inf
         for succ in IDA.successors(node):
             if (succ not in path):
                 path.append(succ)
-                t = IDA.search(path, g + IDA.cost(node, succ), bound)
+                t = IDA.search(path, g + IDA.costFrom(node, succ), bound)
                 if (t == FOUND):
                     FOUND
                 if (t < min):

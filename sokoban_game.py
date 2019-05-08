@@ -78,7 +78,7 @@ class Sokoban:
             # pass
         if mode == 2:
             cost = 0
-            return IDA.ida_star(cost, board)
+            return IDA.ida_star(board)
 
         if mode == 3:
             # ucs.search(board)
