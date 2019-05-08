@@ -1,6 +1,7 @@
 import os, sys, math, location
 from location import Location
 from direction import Direction
+from copy import deepcopy
 
 L = Direction(Location(-1, 0), 'l')
 R = Direction(Location(1, 0), 'r')
@@ -197,6 +198,19 @@ class State:
             chars += m.character
             chars += ', '
         return chars
+
+    def getPossibleActions(self):
+        return tuple(self.moves_available())
+    
+    def takeAction(self, action):
+        cpy = deepcopy(self)
+        return cpy.move(action)
+    
+    def isTerminal(self):
+        return self.is_win()
+    
+    def getReward():
+        return 10
 
     '''
     # Heuristics 1 uses manhattan distance

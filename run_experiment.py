@@ -30,8 +30,8 @@ def main():
     print("Which search algorithm would you like to run?")
     print("1: Breadth first search")
     print("2: Iterative Deepening A* (IDA*)")
-    print("3: Simplified Memory Bounded A* (SMA*)")
-    print("4: Monte Carlo Tree Search (MCST)")
+    print("3: Monte Carlo Tree Search (MCST)")
+    print("4: Simplified Memory Bounded A* (SMA*)")
 
     # Should protect against illegal input
     user_input = input("Input a number from above: ")

@@ -4,6 +4,7 @@ from sokoban_state import State
 from location import Location
 from heuristics import Heuristic
 import willy_ida_star
+import my_mcts
 class Sokoban:
 
     def __init__(self):
@@ -83,8 +84,7 @@ class Sokoban:
             return willy_ida_star.IDAstar(board)
 
         if mode == 3:
-            # ucs.search(board)
-            pass
+            return my_mcts.do_mcts(board)
         if mode == 4:
             # gbfs.search(board)
             pass
