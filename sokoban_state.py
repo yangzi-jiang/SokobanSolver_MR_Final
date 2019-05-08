@@ -200,18 +200,23 @@ class State:
         return chars
 
     def getPossibleActions(self):
-        return tuple(self.moves_available())
+        return self.moves_available()
     
     def takeAction(self, action):
         cpy = deepcopy(self)
-        return cpy.move(action)
+        cpy.move(action)
+        # print(cpy)
+        return cpy
     
     def isTerminal(self):
         return self.is_win()
     
-    def getReward():
-        return 10
-
+    def getReward(self):
+        if self.is_win():
+            return 1
+        else:
+            return 0
+            
     '''
     # Heuristics 1 uses manhattan distance
     def calculateH1(self):
