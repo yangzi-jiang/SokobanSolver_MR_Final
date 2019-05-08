@@ -10,14 +10,15 @@ Runs experiment
 PUZZLES = ['easy4.txt', 'minicosmos1.txt', 'minicosmos2.txt',
            'minicosmos3.txt', 'simple1.txt', 'original1.txt']
 
-def run_search(s, filename, search_selection, h_method):
+def run_search(s, filename, search_selection, h_method = None):
     board = s.new_game(filename)
     print('Intializing Board...')
     # s.print_board_lists(board)
     s.print_2d_board(board)
     s.print_board(board)
-    h_val = str(s.get_h_val(board, h_method))
-    print('Puzzle has a ' + h_method + ' heuristic value of ' + h_val)
+    if h_method is not None:
+        h_val = str(s.get_h_val(board, h_method))
+        print('Puzzle has a ' + h_method + ' heuristic value of ' + h_val)
     print('\nSolving ' + filename + '...')
     solved_board = s.search(board, search_selection)
     s.print_board(solved_board)
