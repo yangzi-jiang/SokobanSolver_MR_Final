@@ -56,7 +56,7 @@ def generate_results():
     folders = [microbans, miscs, sokwholes]
     
     for folder in folders:
-        num_puzzles = 3
+        num_puzzles = 30
 
         # folderName = folder.replace("levels/", "")
         # folderName = folderName.replace("/*.txt", "-output.csv")
