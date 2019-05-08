@@ -78,9 +78,9 @@ class Sokoban:
             return bfs.search(board)
             # pass
         if mode == 2:
-            h = Heuristic()
-            h.get_heuristics(board)
-            return willy_ida_star.IDAstar(board, h)
+            # h = Heuristic()
+            # h.get_heuristics(board)
+            return willy_ida_star.IDAstar(board)
 
         if mode == 3:
             # ucs.search(board)

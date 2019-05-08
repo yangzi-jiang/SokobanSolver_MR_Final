@@ -28,7 +28,15 @@ def h(board):
     return h.get_heuristics(board)
 
 def successors(board):
-    return board.moves_available()
+    moves = board.moves_available()
+    succ_list = []
+
+    for step in moves:
+        cpy = deepcopy(board)
+        cpy.move(step)
+        succ_list.append(cpy)
+
+    return succ_list
 
 def isClosed(closedSet, x):
     for y in closedSet:
@@ -36,7 +44,7 @@ def isClosed(closedSet, x):
             return True
     return False
 
-def IDAstar(b, h):
+def IDAstar(b):
     MAXNODES = 20000000
     openSet = []
     closedSet = []
@@ -47,7 +55,7 @@ def IDAstar(b, h):
 
     while True:
         pathLimit = pathLimit + 1
-        print ("current pathLimit = ", pathLimit)
+        # print ("current pathLimit = ", pathLimit)
         b.g_cost = 0
         openSet.insert(0, b)
         ht = HashTable()
@@ -70,7 +78,7 @@ def IDAstar(b, h):
             if currentState.f_cost <= pathLimit:
                 closedSet.insert(0, currentState)
                 # get the sucessors of the current state
-                for x in currentState.moves_available():
+                for x in successors(currentState):
                     # test if node has been "closed"
                     if isClosed(closedSet,x):
                         continue
@@ -91,7 +99,7 @@ def IDAstar(b, h):
                 visitSet.insert(0, currentState)
 
         #print "Nodes checked = ", nodes
-        print("iteration = ", it)
+        # print("iteration = ", it)
         it = it + 1
         if len(visitSet) == 0:
             print("FAIL")
