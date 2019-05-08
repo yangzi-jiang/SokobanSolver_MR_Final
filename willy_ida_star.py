@@ -4,7 +4,8 @@ from hash_table import HashTable
 from location import Location
 from sokoban_state import State
 import math
-import heuristics
+from heuristics import Heuristic
+import sys
 
 FOUND = -1
 NOT_FOUND = -2
@@ -23,7 +24,8 @@ def print_results(board, gen, rep, fri, expl, dur):
     print('Duration: ' + str(dur) + ' secs')
 
 def h(board):
-    return heuristics.get_heuristics(board)
+    h = Heuristic()
+    return h.get_heuristics(board)
 
 def successors(board):
     return board.moves_available()
@@ -56,6 +58,7 @@ def IDAstar(b, h):
 
             nodes = nodes + 1
             if currentState.is_win():
+                print_results(currentState,0,0,0,0,0)
                 return currentState # SOLUTION FOUND!!!
 
             if nodes % 1000000 == 0:

@@ -3,6 +3,7 @@ from my_ida_star import IDA
 from sokoban_state import State
 from location import Location
 from heuristics import Heuristic
+import willy_ida_star
 class Sokoban:
 
     def __init__(self):
@@ -77,8 +78,9 @@ class Sokoban:
             return bfs.search(board)
             # pass
         if mode == 2:
-            cost = 0
-            return IDA.ida_star(board)
+            h = Heuristic()
+            h.get_heuristics(board)
+            return willy_ida_star.IDAstar(board, h)
 
         if mode == 3:
             # ucs.search(board)
