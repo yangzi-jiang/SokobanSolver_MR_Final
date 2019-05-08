@@ -15,9 +15,9 @@ class State:
     TILE_SPACE = ' '
     TILE_WALL = '#'
     TILE_BLOCK_ON_GOAL = '*'
-    TILE_PLAYER_ON_GOAL = '!'
+    TILE_PLAYER_ON_GOAL = '+'
     TILE_DEADLOCK = 'x'
-    TILE_PLAYER_ON_DEADLOCK = '+'
+    # TILE_PLAYER_ON_DEADLOCK = '+'
 
     def __init__(self, move_history):
         self.move_history = move_history
@@ -195,7 +195,7 @@ class State:
         chars = ''
         for m in self.move_history:
             chars += m.character
-            chars += ', '
+            chars += '|'
         return chars
 
     '''

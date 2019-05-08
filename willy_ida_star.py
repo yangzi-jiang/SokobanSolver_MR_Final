@@ -23,9 +23,9 @@ def print_results(board, gen, rep, fri, expl, dur):
     print("Explored nodes: " + str(expl))
     print('Duration: ' + str(dur) + ' secs')
 
-def h(board):
+def h(board, h_method):
     h = Heuristic()
-    return h.get_heuristics(board)
+    return h.get_heuristics(board, h_method)
 
 def successors(board):
     moves = board.moves_available()
@@ -44,9 +44,10 @@ def isClosed(closedSet, x):
             return True
     return False
 
-def IDAstar(b):
+def IDAstar(b, h_method, path_limit = None):
     # Bookkeeping
     start = time()
+    curr_time = start
     nodes_generated = 0
     nodes_repeated = 0
     
@@ -57,13 +58,22 @@ def IDAstar(b):
     openSet = []
     closedSet = []
     visitSet = []
-    pathLimit = h(b)
+    pathLimit = h(b, h_method)
     success = False
     it = 0
-    b.f_cost = h(b)
+    b.f_cost = h(b, h_method) + b.g_cost
 
-    while True:
-        pathLimit = pathLimit + h(b)
+    while_loop_counter = 0
+
+    while (curr_time - start <= 120): #Time limit per puzzle in secs
+        while_loop_counter += 1
+
+        if(path_limit != None):
+            pathLimit = pathLimit + path_limit
+        else:
+            if(h(b, h_method) / while_loop_counter) > 1:
+                pathLimit = pathLimit + h(b, h_method) / while_loop_counter
+            pathLimit = pathLimit + 1
         # print ("current pathLimit = ", pathLimit)
         b.g_cost = 0
         openSet.insert(0, b)
@@ -106,7 +116,7 @@ def IDAstar(b):
                     x.g_cost = currentState.g_cost + 1
                     # x.setG(currentState.getG() + 1)
 
-                    x.f_cost = x.g_cost + h(x)
+                    x.f_cost = x.g_cost + h(x, h_method)
                     # x.setF(x.getG()+ h(x))
                     #x.setParent(currentState)
                     openSet.insert(0, x) # push
@@ -136,3 +146,4 @@ def IDAstar(b):
         fringe_nodes += len(visitSet)
         visitSet = []
         closedSet = []
+        curr_time = time()

@@ -35,7 +35,7 @@ def search(board):
     while keepLooking:
         if frontier.isEmpty():
             print("Solution not found")
-            return
+            return None
         else:
             currNode = frontier.pop()
             moves = currNode.moves_available()

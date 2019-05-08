@@ -1,5 +1,4 @@
 import bfs
-from my_ida_star import IDA
 from sokoban_state import State
 from location import Location
 from heuristics import Heuristic
@@ -44,17 +43,21 @@ class Sokoban:
                         new_board.add_box(x, y)
                         new_board.add_goal(x, y)
                         new_board.add_space(x, y)
-                    elif char == '!':
-                        new_board.add_goal(x, y)
-                        new_board.set_player(x, y)
                     elif char == ' ':
                         new_board.add_space(x, y)
                     x += 1
                     row.append(char)
-                self.col_size = x
-                y += 1
+
+                if (self.col_size < x):
+                    self.col_size = x
+
+                # If the row is not empty, then its part of the puzzle
+                if len(row) != 0:
+                    y += 1
+                    new_board.add_full_board(row)
+                
                 x = 0
-                new_board.add_full_board(row)
+    
             self.row_size = y
 
             # Adding static deadlocks after building the walls
@@ -76,14 +79,14 @@ class Sokoban:
             #     print "No player on board"
             #     return None    
 
-    def search(self, board, mode):
+    def search(self, board, mode, h_method = None, path_limit = None):
         if mode == 1:
             return bfs.search(board)
             # pass
         if mode == 2:
             # h = Heuristic()
             # h.get_heuristics(board)
-            return willy_ida_star.IDAstar(board)
+            return willy_ida_star.IDAstar(board, h_method, path_limit)
 
         if mode == 3:
             # ucs.search(board)

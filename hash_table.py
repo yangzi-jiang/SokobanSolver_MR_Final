@@ -13,4 +13,3 @@ class HashTable:
         else:
             self.table[key] = True
             return False
-
