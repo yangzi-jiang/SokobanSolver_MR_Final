@@ -103,21 +103,21 @@ def generate_results():
 
                 try:
                     ida_4_output = run_search(soko_game, puzzle, 2, 'e', 1) # IDA*, mahattan, path_limit_incrementer = 1
-                    ida_4_list = [puzzleName, "IDA*", ida_4_output[6], "Manhattan", "Fixed (1)", ida_4_output[1], ida_4_output[2], ida_4_output[3], ida_4_output[4], ida_4_output[5], ida_4_output[0].getDirections()]
+                    ida_4_list = [puzzleName, "IDA*", ida_4_output[6], "Euclidean", "Fixed (1)", ida_4_output[1], ida_4_output[2], ida_4_output[3], ida_4_output[4], ida_4_output[5], ida_4_output[0].getDirections()]
                     output.writerow(ida_4_list)
                 except:
                     pass
                 
                 try:
                     ida_5_output = run_search(soko_game, puzzle, 2, 'e', 4) # IDA* with euclidean
-                    ida_5_list = [puzzleName, "IDA*", ida_5_output[6], "Manhattan", "Fixed (4)", ida_5_output[1], ida_5_output[2], ida_5_output[3], ida_5_output[4], ida_5_output[5], ida_5_output[0].getDirections()]
+                    ida_5_list = [puzzleName, "IDA*", ida_5_output[6], "Euclidean", "Fixed (4)", ida_5_output[1], ida_5_output[2], ida_5_output[3], ida_5_output[4], ida_5_output[5], ida_5_output[0].getDirections()]
                     output.writerow(ida_5_list)
                 except:
                     pass
                     
                 try:
                     ida_6_output = run_search(soko_game, puzzle, 2, 'e') # IDA* with euclidean
-                    ida_6_list = [puzzleName, "IDA*", ida_6_output[6], "Manhattan", "Dynamic", ida_6_output[1], ida_6_output[2], ida_6_output[3], ida_6_output[4], ida_6_output[5], ida_6_output[0].getDirections()]
+                    ida_6_list = [puzzleName, "IDA*", ida_6_output[6], "Euclidean", "Dynamic", ida_6_output[1], ida_6_output[2], ida_6_output[3], ida_6_output[4], ida_6_output[5], ida_6_output[0].getDirections()]
                     output.writerow(ida_6_list)
 
                     # run_search(soko_game, puzzle, 2, 'max', 1) # IDA*, mahattan, path_limit_incrementer
